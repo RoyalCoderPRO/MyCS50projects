@@ -1,7 +1,7 @@
 x = input('Greeting: ').lower().split()
-if x[0] == 'hello':
+if 'hello' in x[0]:
     print('$0')
-elif x[0] == 'h':
+elif 'h' == x[0].split():
     print('$20')
 else:
     print('$100')
