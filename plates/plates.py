@@ -22,8 +22,11 @@ def is_valid(s):
     if number_mode == True:
         if integers[0] == '0':
             return False
-    if s[0].isalpha() and s[1].isalpha() and 2 <= len(s) <= 6:
-        return True
-
+    if  2 <= len(s) <= 6:
+        if s[0].isalpha() and s[1].isalpha():
+            return True
+        else:
+            return False
+    return False
 
 main()
