@@ -12,7 +12,7 @@ months = [
     "November",
     "December"
 ]
-month_num = dict(enumerate(months, 1))
+month_num = list(enumerate(months, 1))
 print(month_num)
 while True:
     x = input()
