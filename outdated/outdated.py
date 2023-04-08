@@ -12,3 +12,5 @@ months = [
     "November",
     "December"
 ]
+try:
+    assert '/' in input()
