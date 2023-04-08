@@ -8,6 +8,5 @@ while True:
         groceries[x] = i
     except EOFError:
         break
-groceries = sorted(groceries)
-for grocery in groceries:
-    print(grocery)
+groceries_list = sorted(groceries)
+print(groceries)
