@@ -1,4 +1,3 @@
-import math
 while True:
     try:
         x, y = input('Fraction: ').split('/')
@@ -11,7 +10,7 @@ while True:
             print('F')
             break
         else:
-            print(str(int(math.ceil(z*100))) + '%')
+            print(str(int(round(z*100))) + '%')
             break
     except (ValueError, ZeroDivisionError, AssertionError):
         pass
