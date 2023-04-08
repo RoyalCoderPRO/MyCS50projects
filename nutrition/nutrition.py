@@ -1,4 +1,4 @@
-x = input('Write fruit here: ').camelcase()
+x = input('Write fruit here: ').capitalize()
 Fruits_calories = {
     'Apple': 130,
     'Avocado': 50,
@@ -6,7 +6,7 @@ Fruits_calories = {
     'Cantaloupe': 50,
     'Grapefruit': 60,
     'Grapes': 90,
-    'Honeydew Melon': 50,
+    'Honeydew melon': 50,
     'Kiwifruit': 90,
     'Lemon': 15,
     'Lime': 20,
@@ -17,7 +17,7 @@ Fruits_calories = {
     'Pineapple': 50,
     'Plums': 70,
     'Strawberries': 50,
-    'Sweet Cherries': 100,
+    'Sweet cherries': 100,
     'Tangerine': 50,
     'Watermelon': 80
 }
