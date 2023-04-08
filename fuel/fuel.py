@@ -10,6 +10,7 @@ while True:
             break
         else:
             print(str(z) + '%')
+            break
     except (ValueError, ZeroDivisionError):
         pass
 
