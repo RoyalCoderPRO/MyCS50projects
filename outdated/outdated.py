@@ -23,12 +23,12 @@ while True:
             break
         elif ',' in x:
             m, d, y = x.split()
-            d.replace(',','')
-            print(int(d) <= 31)
+            day = d.replace(',','')
+            assert int(day) <= 31
             m = months.index(m)+1
             d, m = str(d).zfill(3), str(m).zfill(2)
             print(f'{y}-{m}-{d}')
             break
-    except AssertionError:
+    except (AssertionError, ValueError):
         pass
 
