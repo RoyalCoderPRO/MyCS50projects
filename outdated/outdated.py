@@ -28,6 +28,6 @@ while True:
             d, m = str(d).zfill(3), str(m).zfill(2)
             print(f'{y}-{m}-{d}')
             break
-    except:
+    except ValueError:
         pass
 
