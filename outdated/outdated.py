@@ -26,8 +26,8 @@ while True:
             day = d.replace(',','')
             assert int(day) <= 31
             m = months.index(m)+1
-            d, m = str(d).zfill(3), str(m).zfill(2)
-            print(f'{y}-{m}-{d}')
+            day, m = str(day).zfill(2), str(m).zfill(2)
+            print(f'{y}-{m}-{day}')
             break
     except (AssertionError, ValueError):
         pass
