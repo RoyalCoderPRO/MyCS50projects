@@ -14,3 +14,5 @@ months = [
 ]
 try:
     assert '/' in input()
+except AssertionError:
+    assert ',' in input()
