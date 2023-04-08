@@ -21,3 +21,4 @@ Fruits_calories = {
     'Tangerine': 50,
     'Watermelon': 80
 }
+print('Calories: ' + str(Fruits_calories[x]))
