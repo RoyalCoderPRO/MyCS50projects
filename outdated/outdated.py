@@ -14,7 +14,7 @@ months = [
 ]
 
 while True:
-    x = input()
+    x = input('Put your goddamn date here: ')
     try:
         if '/' in x:
             m, d, y = x.split('/')
