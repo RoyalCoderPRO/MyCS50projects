@@ -7,7 +7,10 @@ def main():
 
 
 def is_valid(s):
-    return s[0].isalpha() and s[1].isalpha() and 2 <= len(s) <= 6
+    letter_mode = False
+    for char in s:
+        if type(char) == int()
+    if s[0].isalpha() and s[1].isalpha() and 2 <= len(s) <= 6:
 
 
 main()
