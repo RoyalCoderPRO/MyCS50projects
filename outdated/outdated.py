@@ -18,7 +18,8 @@ while True:
     try:
         if '/' in x:
             m, d, y = x.strip().split('/')
-            assert int(day) <= 31
+            assert int(d) <= 31
+            assert int(m) <= 12
             d, m = d.zfill(2), m.zfill(2)
             print(f'{y}-{m}-{d}')
             break
