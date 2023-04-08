@@ -1,8 +1,12 @@
 x, y, z = str(input('Expression: ')).split()
-
+x = int(x)
+y
 if y == '+':
-    print(x + z)
-if y == '-':
-    print(x - z)
-if y == '*':
-    print()
+    print(float(x + z))
+elif y == '-':
+    print(float(x - z))
+elif y == '*':
+    print(float(x * z))
+elif y == '/':
+    print(float(x / z))
+    if z == 0:
