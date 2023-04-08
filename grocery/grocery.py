@@ -9,5 +9,5 @@ while True:
     except EOFError:
         break
 groceries_list = sorted(groceries)
-print(groceries_list)
-print(groceries)
+for grocery in groceries_list:
+    print(str(groceries[grocery]) + ' ' + grocery)
