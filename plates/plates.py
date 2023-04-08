@@ -8,13 +8,17 @@ def main():
 
 def is_valid(s):
     number_mode = False
+    integers = ()
     for char in s:
-        if type(char) is int:
+        if type(char).isalpha():
+        elif type(char).isnumeric():
             number_mode = True
-        if number_mode == True:
-            
-        if number_mode == True and type(char) is str:
+            integers += int(char)
+        if number_mode = True and type(char).isalpha():
             return False
+    if char[0] == 0:
+        return False
+
     if s[0].isalpha() and s[1].isalpha() and 2 <= len(s) <= 6:
         return True
 
