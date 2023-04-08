@@ -21,4 +21,5 @@ Fruits_calories = {
     'Tangerine': 50,
     'Watermelon': 80
 }
-print('Calories: ' + str(Fruits_calories[x]))
+if x in Fruits_calories:
+    print('Calories: ' + str(Fruits_calories[x]))
