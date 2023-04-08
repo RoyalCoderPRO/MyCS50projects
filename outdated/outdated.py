@@ -12,7 +12,7 @@ months = [
     "November",
     "December"
 ]
-print(month_num)
+
 while True:
     x = input()
     if '/' in x:
@@ -21,7 +21,7 @@ while True:
         print(f'{y}-{m}-{d}')
         break
     elif ',' in x:
-        m, d, y = x.split()
+        d, , y = x.split()
         d.replace(',','')
         m = months.index(m)+1
 
