@@ -12,8 +12,8 @@ months = [
     "November",
     "December"
 ]
-try:
-    assert '/' in input()
-except AssertionError:
-    assert ',' in input()
-    
+while True:
+    try:
+        x = input()
+        assert '/' in x or ',' in x
+    except
