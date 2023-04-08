@@ -1,4 +1,4 @@
-name = input()
+name = input('Type something here: ')
 new_name = ('')
 for letter in name:
     if letter.isupper():
