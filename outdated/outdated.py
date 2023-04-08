@@ -24,7 +24,6 @@ while True:
         m, d, y = x.split()
         d.replace(',','')
         m = months.index(m)+1
-
-        d, m = d.zfill(2), m.zfill(2)
+        d, m = str(d).zfill(2), str(m).zfill(2)
         print(f'{y}-{m}-{d}')
         break
