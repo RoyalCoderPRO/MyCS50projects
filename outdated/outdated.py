@@ -13,8 +13,7 @@ months = [
     "December"
 ]
 while True:
-    try:
-        x = input()
-        assert '/' in x or ',' in x
-    except AssertionError:
+    x = input()
+    if '/' in x:
+        m, d, y = x.split('/')
         
