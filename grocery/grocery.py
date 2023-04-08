@@ -9,4 +9,5 @@ while True:
     except EOFError:
         break
 groceries_list = sorted(groceries)
+print(groceries_list)
 print(groceries)
