@@ -2,5 +2,6 @@ name = input()
 new_name = ('')
 for letter in name:
     if letter.isupper():
-        new_name.append('_')
-    new_name.append(letter)
+        new_name += '_'
+    new_name += letter.lower()
+print(new_name)
