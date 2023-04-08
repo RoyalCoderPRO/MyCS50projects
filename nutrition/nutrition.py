@@ -1,4 +1,4 @@
-x = input('Write fruit here: ').capitalize()
+x = input('Write fruit here: ').camelcase()
 Fruits_calories = {
     'Apple': 130,
     'Avocado': 50,
