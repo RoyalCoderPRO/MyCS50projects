@@ -22,5 +22,7 @@ while True:
     elif ',' in x:
         m, d, y = x.split()
         d.replace(',','')
+        m = months[m]
         d, m = d.zfill(2), m.zfill(2)
+        print(f'{y}-{m}-{d}')
         break
