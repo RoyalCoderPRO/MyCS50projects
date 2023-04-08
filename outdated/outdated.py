@@ -24,7 +24,7 @@ while True:
         elif ',' in x:
             m, d, y = x.split()
             d.replace(',','')
-            assert int(d) <= 12
+            assert int(d) <= 31
             m = months.index(m)+1
             d, m = str(d).zfill(3), str(m).zfill(2)
             print(f'{y}-{m}-{d}')
