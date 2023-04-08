@@ -21,7 +21,7 @@ while True:
         print(f'{y}-{m}-{d}')
         break
     elif ',' in x:
-        d, , y = x.split()
+        m, d, y = x.split()
         d.replace(',','')
         m = months.index(m)+1
 
