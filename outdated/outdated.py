@@ -18,5 +18,9 @@ while True:
         m, d, y = x.split('/')
         d, m = d.zfill(2), m.zfill(2)
         print(f'{y}-{m}-{d}')
+        break
     elif ',' in x:
-        
+        m, d, y = x.split()
+        d.replace(',','')
+        d, m = d.zfill(2), m.zfill(2)
+        break
