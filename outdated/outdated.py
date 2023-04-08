@@ -12,7 +12,6 @@ months = [
     "November",
     "December"
 ]
-month_num = list(enumerate(months, 1))
 print(month_num)
 while True:
     x = input()
@@ -24,6 +23,7 @@ while True:
     elif ',' in x:
         m, d, y = x.split()
         d.replace(',','')
+        m = months.index(m)+1
 
         d, m = d.zfill(2), m.zfill(2)
         print(f'{y}-{m}-{d}')
