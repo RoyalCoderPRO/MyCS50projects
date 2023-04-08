@@ -16,4 +16,5 @@ while True:
     try:
         x = input()
         assert '/' in x or ',' in x
-    except
+    except AssertionError:
+        
