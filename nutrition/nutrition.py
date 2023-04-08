@@ -1,0 +1,1 @@
+x = input('Write fruit here: ').lower()
