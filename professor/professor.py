@@ -1,14 +1,15 @@
 import random
 
-while True:
-    try:
-        l = int(input())
-        assert l == 1 or l == 2 or l == 3
-    except (ValueError,AssertionError):
-        continue
-    else:
-        print('level: ' + str(l))
-        break
+def get_level():
+    while True:
+        try:
+            l = int(input())
+            assert l == 1 or l == 2 or l == 3
+        except (ValueError,AssertionError):
+            continue
+        else:
+            print('level: ' + str(l))
+            return l
 counter = 0
 score = 0
 while counter < 10:
