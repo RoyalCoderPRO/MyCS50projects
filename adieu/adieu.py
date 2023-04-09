@@ -6,11 +6,16 @@ while True:
     except EOFError:
         break
 print()
-names_list = names_list[-2].replace(',','and')
-print(names_list[-2])
-if len(names_list) > 2:
-    names_list[-1].replace(',','')
+
+if len(names_list) > 1:
+    names_list[-2] = names_list[-2].replace(',',' and')
+
+
+names_list[-1] = names_list[-1].replace(',','')
+
 names = ''
+
 for name in names_list:
     names += name
-print('Adieu, adieu to '+ names)
+
+print('Adieu, adieu, to '+ names)
