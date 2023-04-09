@@ -15,3 +15,7 @@ tries = 1
 while tries <= 3 and ans != z:
     tries += 1
     ans = input()
+    print('EEE')
+if ans != z:
+    print(z)
+elif:
