@@ -12,11 +12,15 @@ while True:
             pass
 y = rand.randint(1,x)
 while True:
-    z = int(input('Guess: '))
-    if z < y:
-        print('Too small!')
-    if z == y:
-        print('Just right!')
-        break
-    if z > y:
-        print('Too large!')
+    try:
+        z = int(input('Guess: '))
+    except ValueError:
+        pass
+    else:
+        if z < y:
+            print('Too small!')
+        if z == y:
+            print('Just right!')
+            break
+        if z > y:
+            print('Too large!')
