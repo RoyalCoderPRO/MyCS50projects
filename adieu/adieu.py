@@ -11,7 +11,7 @@ if 3 > len(names_list) > 1:
     names_list[-2] = names_list[-2].replace(',',' and')
 
 if len(names_list) > 2:
-    names_list[-2] = names_list[-2].append('and')
+    names_list[-2] += 'and '
     names_list[-1] = names_list[-1].replace(',','')
 
 names = ''
