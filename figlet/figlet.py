@@ -1,7 +1,7 @@
 from pyfiglet import Figlet
-import random
 import sys
 
-x = print('Input: ')
-if len(sys.argv) == 0:
-    
+x = input('Input: ')
+if len(sys.argv) == 1:
+    f = Figlet(font='slant')
+    print(f.renderText(x))
