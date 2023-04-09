@@ -4,11 +4,11 @@ while True:
     try:
         l = int(input())
         assert l == 1 or l == 2 or l == 3
-        break
-    except AssertionError:
+    except (ValueError,AssertionError):
         continue
-    finally:
+    else:
         print('level: ' + str(l))
+        break
 counter = 0
 score = 0
 while counter < 10:
