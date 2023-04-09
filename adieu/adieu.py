@@ -5,6 +5,7 @@ while True:
         names.append(input('Name: ') + ',')
     except EOFError:
         break
-names[-1].replace(',','')
 names[-2].replace(',','and')
-print('Adieu, adieu to, )
+if len(names) > 2:
+    names[-1].replace(',','')
+print('Adieu, adieu to, '  )
