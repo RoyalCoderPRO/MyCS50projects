@@ -12,8 +12,8 @@ while True:
 counter = 0
 score = 0
 while counter <= 10:
-    x = random.randint(0, 10**(l-1))
-    y = random.randint(0, 10**(l-1))
+    x = random.randint(10**(l-1), 10**(l)-1)
+    y = random.randint(10**(l-1), 10**(l)-1)
     print(str(x) +' + ' + str(y))
     z = x + y
     ans = int()
