@@ -1,4 +1,5 @@
 import random
+
 def main():
     generate_integer(get_level())
 
@@ -12,6 +13,7 @@ def get_level():
         else:
             print('level: ' + str(l))
             return l
+
 def generate_integer(l):
     counter = 0
     score = 0
@@ -33,5 +35,6 @@ def generate_integer(l):
             score += 1
         counter += 1
     print(score)
+
 if __name__ == "__main__":
     main()
