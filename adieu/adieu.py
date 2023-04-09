@@ -5,3 +5,4 @@ while True:
 
     except EOFError:
         break
+print('Adieu, adieu to, )
