@@ -2,7 +2,7 @@ names_list = []
 
 while True:
     try:
-        names_list.append(input() + ', ')
+        names_list.append(input('Name: ') + ', ')
     except EOFError:
         break
 print()
