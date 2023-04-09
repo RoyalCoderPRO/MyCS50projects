@@ -10,7 +10,9 @@ try:
     else:
         assert False
 except (ValueError, IndexError, NameError, AssertionError):
+    print('error')
     sys.exit()
+
 
 x = input('Input: ')
 print('Output: ')
