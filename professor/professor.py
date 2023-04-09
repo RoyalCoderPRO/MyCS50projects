@@ -26,3 +26,4 @@ while counter <= 10:
     else:
         score += 1
     counter += 1
+print(score)
