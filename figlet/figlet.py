@@ -2,4 +2,6 @@ from pyfiglet import Figlet
 import random
 import sys
 
-print('Input: ')
+x = print('Input: ')
+if len(sys.argv) == 0:
+    
