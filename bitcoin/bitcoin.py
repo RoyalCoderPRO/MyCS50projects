@@ -8,6 +8,6 @@ except:
     sys.exit('Invalid Input')
 try:
     data = requests.get('https://api.coindesk.com/v1/bpi/currentprice.json',)
-    print(data)
+    print(data.json())
 except requests.RequestException:
     sys.exit('Invalid Input')
