@@ -7,11 +7,12 @@ while True:
         break
 print()
 
-if len(names_list) > 1:
+if 3 > len(names_list) > 1:
     names_list[-2] = names_list[-2].replace(',',' and')
 
-
-names_list[-1] = names_list[-1].replace(',','')
+if len(names_list) > 2:
+    names_list[-2] = names_list[-2].append('and')
+    names_list[-1] = names_list[-1].replace(',','')
 
 names = ''
 
