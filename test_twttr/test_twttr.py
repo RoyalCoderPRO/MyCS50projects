@@ -1,7 +1,4 @@
-def main():
-    
-    shorten()
-
+import 
 
 def shorten(word):
 
