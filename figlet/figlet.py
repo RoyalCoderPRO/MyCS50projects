@@ -10,7 +10,7 @@ try:
         font_style = sys.argv[2]
 except (ValueError, IndexError, NameError):
     sys.exit()
-
+print(Figlet.getFonts())
 print('Output: ')
 f = Figlet(font=font_style)
 print(f.renderText(x))
