@@ -17,4 +17,4 @@ except requests.RequestException:
 
 price = float(data.json()['bpi']['USD']['rate_float'])
 total = price*float(n)
-print(f'${total}')
+print(f"${total:,.4f}")
