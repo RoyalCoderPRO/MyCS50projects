@@ -8,7 +8,7 @@ try:
 except AssertionError:
     sys.exit('Command-line argument is not a number')
 except IndexError:
-    sys.exit('Missing Command-line input')
+    sys.exit('Missing command-line argument')
 
 try:
     data = requests.get('https://api.coindesk.com/v1/bpi/currentprice.json',)
