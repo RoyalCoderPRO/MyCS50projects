@@ -1,11 +1,15 @@
-names = []
+names_list = []
 
 while True:
     try:
-        names.append(input('Name: ') + ',')
+        names_list.append(input('Name: ') + ',')
     except EOFError:
         break
-names[-2].replace(',','and')
-if len(names) > 2:
-    names[-1].replace(',','')
-print('Adieu, adieu to, '  )
+print()
+names_list[-2].replace(',','and')
+if len(names_list) > 2:
+    names_list[-1].replace(',','')
+names = ''
+for name in names_list:
+    names += name
+print('Adieu, adieu to, '+ name)
