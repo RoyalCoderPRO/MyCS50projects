@@ -6,7 +6,9 @@ while True:
         assert l == 1 or l == 2 or l == 3
         break
     except AssertionError:
-        pass
+        continue
+    finally:
+        print('level: ' + str(l))
 counter = 0
 score = 0
 while counter <= 10:
