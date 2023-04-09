@@ -15,3 +15,4 @@ print('Output: ')
 f = Figlet(font=font_style)
 print(f.renderText(x))
 
+Figlet
