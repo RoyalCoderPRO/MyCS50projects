@@ -18,7 +18,7 @@ def generate_integer(l):
     while counter < 10:
         x = random.randint(10**(l-1), 10**(l)-1)
         y = random.randint(10**(l-1), 10**(l)-1)
-        print(str(x) +' + ' + str(y))
+        print(str(x) +' + ' + str(y) + ' = ', end='')
         z = x + y
         ans = int()
         tries = 1
