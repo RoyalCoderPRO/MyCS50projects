@@ -1,7 +1,6 @@
 from pyfiglet import Figlet
 import sys
 figlet = Figlet()
-x = input('Input: ')
 try:
     if len(sys.argv) == 1:
         font_style = 'big'
@@ -10,7 +9,7 @@ try:
         assert font_style in figlet.getFonts()
 except (ValueError, IndexError, NameError, AssertionError):
     sys.exit()
-
+x = input('Input: ')
 print('Output: ')
 f = Figlet(font=font_style)
 print(f.renderText(x))
