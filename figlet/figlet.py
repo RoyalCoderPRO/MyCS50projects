@@ -10,8 +10,7 @@ try:
     else:
         assert False
 except (ValueError, IndexError, NameError, AssertionError):
-    print('Invalid Usage')
-    sys.exit()
+    sys.exit('Invalid Usage')
 
 
 x = input('Input: ')
