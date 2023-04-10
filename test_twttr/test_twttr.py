@@ -1,6 +1,4 @@
-import twttr
-
-variable = input()
+from twttr import shorten
 
 def test_null():
 
