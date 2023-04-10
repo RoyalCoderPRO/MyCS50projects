@@ -2,11 +2,11 @@ from twttr import shorten
 
 def test_null():
 
-    x = twttr.shorten()
+    x = shorten()
     assert x
 
 
 def test_argument():
 
-    x = twttr.shorten(variable)
+    x = shorten(variable)
     assert x
