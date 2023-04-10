@@ -1,8 +1,6 @@
 def main():
 
-    x = input('Type something here: ')
-
-    print(shorten(x))
+    print(shorten())
 
 def shorten(word='Twitter'):
 
