@@ -2,7 +2,7 @@ def main():
 
     x = input('Type something here: ')
 
-    shorten(x):
+    print(shorten(x))
 
 def shorten(word):
 
