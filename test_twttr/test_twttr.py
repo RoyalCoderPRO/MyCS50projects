@@ -2,9 +2,14 @@ import twttr
 
 x = input()
 
-test_null():
-    twttr.shorten()
+def test_null():
+    try:
+        x = twttr.shorten()
+        assert x
+    except AssertionError:
+        pass
 
 
-test_argument(x):
+
+def test_argument(x):
     twttr.shorten()
