@@ -1,6 +1,6 @@
 import twttr
 
-x = input()
+variable = input()
 
 def test_null():
 
@@ -8,7 +8,7 @@ def test_null():
     assert x
 
 
-def test_argument(x):
+def test_argument():
 
-    x = twttr.shorten(x)
+    x = twttr.shorten(variable)
     assert x
