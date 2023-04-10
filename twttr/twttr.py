@@ -4,7 +4,7 @@ def main():
 
     print(shorten(x))
 
-def shorten(word):
+def shorten(word='Twitter'):
 
     y = ('')
     for l in word:
