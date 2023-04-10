@@ -6,7 +6,7 @@ def shorten(word='Twitter'):
 
     y = ('')
     for l in word:
-        if l.lower() == 'a' or l.lower() == 'e' or l.lower() == 'i' or l.lower() == 'o' or l.lower() == 'u':
+        if l == 'a' or l == 'e' or l == 'i' or l == 'o' or l == 'u':
             continue
         else:
             y += l
