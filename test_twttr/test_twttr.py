@@ -1,5 +1,6 @@
 from twttr import shorten
 
+variable = 'Twitter'
 def test_null():
 
     x = shorten()
