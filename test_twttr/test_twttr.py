@@ -1,8 +1,10 @@
-import 
+import twttr
 
-def shorten(word):
+x = input()
+
+test_null():
+    twttr.shorten()
 
 
-
-if __name__ == "__main__":
-    main()
+test_argument(x):
+    twttr.shorten()
