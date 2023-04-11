@@ -1,10 +1,8 @@
 from twttr import shorten
 
-variable = 'Twitter'
 def test_null():
 
-    x = shorten()
-    assert x
+    assert shorten('Twitter') == 'Twttr'
 
 
 def test_argument():
