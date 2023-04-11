@@ -7,5 +7,5 @@ def test_null():
 
 def test_argument():
 
-    x = shorten(variable)
+    x = shorten()
     assert x
