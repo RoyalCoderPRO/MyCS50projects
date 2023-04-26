@@ -6,4 +6,8 @@ def test_hello():
 
 def test_hi():
 
-    assert value('Hi There') 
+    assert value('Hi There') == '$20'
+    
+def test_nonh():
+    
+    assert value('Whats up') == '$100'
