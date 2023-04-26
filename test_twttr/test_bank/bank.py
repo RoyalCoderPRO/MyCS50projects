@@ -1,7 +1,7 @@
 def main():
-    value()
+    print(value())
 
-def value(greeting = 'Yo'):
+def value(greeting = 'Hello There'):
     x = greeting.lower().split()
     if 'hello' in x[0]:
         return '$0'
