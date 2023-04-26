@@ -6,6 +6,5 @@ def test_null():
 
 
 def test_argument():
-
     x = shorten()
-    assert x
+    assert x == 'Twttr'
