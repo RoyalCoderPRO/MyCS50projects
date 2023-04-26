@@ -1,4 +1,4 @@
-import bank
+from bank import value
 
 def test_bank():
-    assert bank.value('Hello There') == '$0'
+    assert value('Hello There') == '$0'
