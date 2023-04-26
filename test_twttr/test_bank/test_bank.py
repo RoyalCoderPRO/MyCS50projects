@@ -1,3 +1,3 @@
 import bank
 def test_bank():
-    assert value('Hello There') == '$0'
+    assert bank.value('Hello There') == '$0'
