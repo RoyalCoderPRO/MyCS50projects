@@ -8,19 +8,19 @@ def convert(fraction):
             x, y = fraction.split('/')
             z = int(x)/int(y)
             assert z <= 1
-            if z <= 0.01:
-                return 'E'
-            elif z >= 0.99:
-                return 'F'
-            else:
-                print(str(int(round(z*100))) + '%')
-                break
+
         except (ValueError, ZeroDivisionError, AssertionError):
             pass
 
 
 def gauge(percentage):
-    ...
+    if percentage <= 0.01:
+        return 'E'
+    elif z >= 0.99:
+        return 'F'
+    else:
+        print(str(int(round(percentage*100))) + '%')
+        break
 
 
 if __name__ == "__main__":
