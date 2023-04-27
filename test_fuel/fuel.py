@@ -1,5 +1,5 @@
 def main():
-    ...
+    print(gauge(convert()))
 
 
 def convert(fraction):
@@ -8,9 +8,10 @@ def convert(fraction):
             x, y = fraction.split('/')
             z = int(x)/int(y)
             assert z <= 1
-
         except (ValueError, ZeroDivisionError, AssertionError):
             pass
+        else:
+            return z
 
 
 def gauge(percentage):
