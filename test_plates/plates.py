@@ -1,12 +1,11 @@
 def main():
-    plate = input("Plate: ")
-    if is_valid(plate):
+    if is_valid():
         print("Valid")
     else:
         print("Invalid")
 
 
-def is_valid(s):
+def is_valid(s= 'abcd'):
     number_mode = False
     integers = ''
     for char in s:
