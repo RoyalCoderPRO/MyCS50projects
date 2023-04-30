@@ -2,6 +2,8 @@ import sys
 import csv
 def main():
     system_check(sys.argv)
+
+
 def system_check(argument):
 
     if len(argument) < 3:
@@ -21,3 +23,6 @@ def system_check(argument):
                 pass
         except FileNotFoundError:
             sys.exit('Could not read invalid_file.csv')
+def 
+if __name__ = '__main__':
+    main()
