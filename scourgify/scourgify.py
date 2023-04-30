@@ -2,6 +2,7 @@ import sys
 import csv
 def main():
     system_check(sys.argv)
+    scourger(sys.argv[1], sys.argv[2])
 
 
 def system_check(argument):
@@ -23,6 +24,9 @@ def system_check(argument):
                 pass
         except FileNotFoundError:
             sys.exit('Could not read invalid_file.csv')
-def 
+def scourger(old, new):
+    with open(old, "r") as file:
+        file = file.reader
+
 if __name__ = '__main__':
     main()
