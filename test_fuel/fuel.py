@@ -1,27 +1,28 @@
 def main():
-    print(gauge(convert()))
+    print(convert())
+    print(gauge(convert(input('Enter fraction: '))))
 
 
-def convert(fraction):
-    while True:
-        try:
-            x, y = fraction.split('/')
-            z = int(x)/int(y)
-            assert z <= 1
-        except (ValueError, ZeroDivisionError, AssertionError):
-            pass
-        else:
-            return z
+def convert(fraction='5/0'):
+    try:
+        x, y = fraction.split('/')
+        z = int(x)/int(y)
+        assert z <= 1
+    except ZeroDivisionError:
+        raise ZeroDivisionError
+    except (AssertionError, ValueError):
+        raise ValueError
+    else:
+        return round(z*100)
 
 
 def gauge(percentage):
-    if percentage <= 0.01:
+    if percentage <= 1:
         return 'E'
-    elif z >= 0.99:
+    elif percentage >= 99:
         return 'F'
     else:
-        print(str(int(round(percentage*100))) + '%')
-        break
+        return (str(percentage)) + '%'
 
 
 if __name__ == "__main__":
