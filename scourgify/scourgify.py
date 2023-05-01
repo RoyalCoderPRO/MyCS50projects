@@ -32,8 +32,8 @@ def scourger(old, new):
     with open(old, "r") as file:
         file_colmn = csv.DictReader(file, fieldnames= ['name','house'])
         for row in file_colmn:
-            first, last = row[0],split(',')
-            house = row[1]
+            new_dict['first'], new_dict['last'] = row[0].split(',')
+            new_dict['house'] = row
     with open (new, 'a') as file:
         writer = csv.DictWriter(new, fieldnames = ['first', 'last', 'house'])
         writer.writeheader()
