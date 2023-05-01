@@ -34,7 +34,10 @@ def scourger(old, new):
         for row in file_colmn:
             new_dict.append({'first': row['name'].split(',')[0], 'last': row['name'].split(',')[1], 'house': row['house']})
     with open (new, 'a') as file:
-        csv.DictWriter(file, fieldnames = ['first', 'last', 'house'])
+        writer = csv.DictWriter(new, fieldnames = ['first', 'last', 'house'])
+        writer.writeheader()
+        
+        writer.writerow({'first':,'last':,'house'})
 
 
 if __name__ == '__main__':
