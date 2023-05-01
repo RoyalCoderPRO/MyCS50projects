@@ -35,8 +35,9 @@ def scourger(old, new):
             new_dict['last'], new_dict['first'] = row[0].split(',')
             new_dict['house'] = row[1]
     with open (new, 'a') as file:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
         for row in new_dict:
-            file.write(new_dict['first'][0], new_dict['last'][0], new_dict['house'][0])
+            writer.writerow({fieldnames[0] : first, fieldnames[1] : last, fieldnames[2] : row["house"]})
 
 
 if __name__ == '__main__':
