@@ -24,11 +24,18 @@ def system_check(argument):
             with open(file_name, "r") as file:
                 pass
         except FileNotFoundError:
-            sys.exit('Could not read invalid_file.csv')
+            sys.exit('Could not read' + file_name)
+
+
 def scourger(old, new):
     with open(old, "r") as file:
         file_colmn = csv.DictReader(file, fieldnames= ['name','house'])
+    first, last = file_colmn['name'].split(',')
+    house = file_colmn['house']
+    new_dict = {first, last, house}
+    with open (new, 'a') as file:
+        file.write(new_dict)
 
 
-if __name__ = '__main__':
+if __name__ == '__main__':
     main()
