@@ -28,8 +28,12 @@ def system_check(argument):
 
 
 def scourger(old, new):
+    new_dict = []
     with open(old, "r") as file:
         file_colmn = csv.DictReader(file, fieldnames= ['name','house'])
+        for row in file_colmn:
+            new_dict.append({'name': row})
+
     first, last = file_colmn['name'].split(',')
     house = file_colmn['house']
     new_dict = {first, last, house}
