@@ -18,7 +18,7 @@ def system_check(argument):
 
 
     if file_name[-4:] != '.csv':
-        sys.exit('Could not read invalid_file.csv')
+        sys.exit('Could not read ' + file_name)
     else:
         try:
             with open(file_name, "r") as file:
@@ -28,6 +28,7 @@ def system_check(argument):
 def scourger(old, new):
     with open(old, "r") as file:
         file_colmn = csv.DictReader(file, fieldnames= ['name','house'])
+
 
 if __name__ = '__main__':
     main()
