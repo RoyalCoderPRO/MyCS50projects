@@ -28,15 +28,15 @@ def system_check(argument):
 
 
 def scourger(old, new):
-    new_dict = []
+    new_dict = {'first':first, 'last':last, 'house':house}
     with open(old, "r") as file:
         file_colmn = csv.DictReader(file, fieldnames= ['name','house'])
         for row in file_colmn:
-            new_dict.append({'first': row['name'].split(',')[0], 'last': row['name'].split(',')[1], 'house': row['house']})
+            first, last = row[0],split(',')
+            house = row[1]
     with open (new, 'a') as file:
         writer = csv.DictWriter(new, fieldnames = ['first', 'last', 'house'])
         writer.writeheader()
-        
         writer.writerow({'first':,'last':,'house'})
 
 
