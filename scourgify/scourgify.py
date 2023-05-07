@@ -28,6 +28,7 @@ def system_check(argument):
 
 
 def scourger(old, new):
+    new_dict = {}
     with open(old, "r") as file:
         file_reader = csv.DictReader(file)
         for row in file_reader:
