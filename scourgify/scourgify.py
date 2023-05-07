@@ -30,12 +30,6 @@ def system_check(argument):
 def scourger(old, new):
     new_dict = ['first', 'last', 'house']
     with open(old, "r") as file:
-        file_colmn = csv.DictReader(file, fieldnames= ['name','house'])
-        for row in file_colmn
-            new_dict['last'], new_dict['first'] = row['name'].split(',')
-            new_dict['house'] = row['house']
-    with open (new, 'a') as file:
-        writer = csv.DictWriter(new, fieldnames=new_dict)
-
-if __name__ == '__main__':
-    main()
+        file_reader = csv.DictReader(file, fieldnames= ['first','last','house'])
+    with new(new, "a") as file:
+        file
