@@ -30,5 +30,9 @@ def system_check(argument):
 def scourger(old, new):
     with open(old, "r") as file:
         file_reader = csv.DictReader(file)
-    with new(new, "a") as file:
-        file
+        for row in file_reader:
+            first, last = row['name'].split(', ')
+            house = row['house']
+    print(first, last, house)
+
+    #with new(new, "a") as file:
