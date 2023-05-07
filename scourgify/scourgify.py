@@ -28,8 +28,7 @@ def system_check(argument):
 
 
 def scourger(old, new):
-    new_dict = ['first', 'last', 'house']
     with open(old, "r") as file:
-        file_reader = csv.DictReader(file, fieldnames= ['first','last','house'])
+        file_reader = csv.DictReader(file)
     with new(new, "a") as file:
         file
