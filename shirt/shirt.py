@@ -2,6 +2,7 @@ import sys
 
 def main():
     system_check(sys.argv)
+    shirt_changer(sys.argv[1], sys.argv[2])
 
 def system_check(argument):
 
@@ -14,17 +15,17 @@ def system_check(argument):
     file_name = argument[1]
 
 
-    if file_name[-4:] != '.csv':
-        sys.exit('Could not read ' + file_name)
+    if file_name[-4:] != '.jpg':
+        sys.exit('Invalid output')
     else:
         try:
             with open(file_name, "r") as file:
                 pass
         except FileNotFoundError:
-            sys.exit('Could not read' + file_name)
+            sys.exit('Input does not exist')
 
-def shirt_changer(self):
-    
+def shirt_changer(input, output):
+
 
 if __name__ == '__main__':
     main()
