@@ -25,7 +25,7 @@ def system_check(argument):
             sys.exit('Input does not exist')
 
 def shirt_changer(input, output):
-
+    pass
 
 if __name__ == '__main__':
     main()
