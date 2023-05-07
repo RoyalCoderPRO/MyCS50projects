@@ -28,14 +28,16 @@ def system_check(argument):
 
 
 def scourger(old, new):
-    new_dict = {}
+    new_dict = []
     with open(old, "r") as file:
         file_reader = csv.DictReader(file)
         for row in file_reader:
             first, last = row['name'].split(', ')
             house = row['house']
-    print(first, last, house)
+            new_dict.append({'first':first, 'last':last, 'house':house})
+    print(new_dict)
 
-    #with new(new, "a") as file:
+    with new(new, "a") as file:
+        
 if __name__ == '__main__':
     main()
