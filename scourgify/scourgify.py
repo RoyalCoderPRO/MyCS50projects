@@ -36,3 +36,5 @@ def scourger(old, new):
     print(first, last, house)
 
     #with new(new, "a") as file:
+if __name__ == '__main__':
+    main()
