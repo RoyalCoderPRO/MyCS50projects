@@ -39,7 +39,9 @@ int year(int population, int end){
     int current = 0;
     do
     {
-        population = population / 4 - population / 3;
+        int born = population / 4;
+        int dead = population / 3;
+        population = born - dead;
         current ++;
         printf("%i\n", current);
     }
