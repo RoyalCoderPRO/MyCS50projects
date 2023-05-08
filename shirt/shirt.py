@@ -22,15 +22,12 @@ def system_check(argument):
         sys.exit('Invalid output')
 
     #Checking image type output and extension consistency
-    elif file_name.endswith('.jpg'):
-        if not argument[2].lower().endswith('.jpg'):
-            sys.exit('Input and output have different extensions')
-    elif file_name.endswith('.jpeg'):
-        if not argument[2].lower().endswith('.jpeg'):
-            sys.exit('Input and output have different extensions')
-    elif file_name.endswith('.png'):
-        if not argument[2].lower().endswith('.png'):
-            sys.exit('Input and output have different extensions')
+    elif file_name.endswith('.jpg') and not argument[2].lower().endswith('.jpg'):
+        sys.exit('Input and output have different extensions')
+    elif file_name.endswith('.jpeg') and not argument[2].lower().endswith('.jpeg'):
+        sys.exit('Input and output have different extensions')
+    elif file_name.endswith('.png') and not argument[2].lower().endswith('.png'):
+        sys.exit('Input and output have different extensions')
 
     #Checking if file exists
     else:
