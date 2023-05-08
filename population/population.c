@@ -3,13 +3,13 @@
 
 int main(void)
 {
-    // TODO: Prompt for start size
-    int start = start()
-    int end = end()
-    // TODO: Prompt for end size
+
+    int start = start();
+    int end = end(start);
+
 
     // TODO: Calculate number of years until we reach threshold
-
+    
     // TODO: Print number of years
 }
 
@@ -18,14 +18,14 @@ int start(void){
     int start = get_int("Start size: ");
     }
     while (start < 9);
-    return start
+    return start;
 }
 
 int end(int n){
     do {
     int end = get_int("End size: ");
     }
-    while (end < n)
-    return end
+    while (end < n);
+    return end;
 }
 
