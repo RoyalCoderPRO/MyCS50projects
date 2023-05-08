@@ -33,9 +33,8 @@ int end(int n){
     return end;
 }
 
-int year(int start, int end){
+int year(int population, int end){
     int year;
-    int population;
     do
     {
         population = int (population / 4) - int (population / 3);
