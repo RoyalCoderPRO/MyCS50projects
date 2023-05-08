@@ -38,7 +38,14 @@ def system_check(argument):
             sys.exit('Input does not exist')
 
 def shirt_changer(input, output):
-    pass
+    with Image.open(input) as old:
+
+
+
+
+    with Image.open(output) as new:
+
+        
 
 if __name__ == '__main__':
     main()
