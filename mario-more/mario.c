@@ -10,10 +10,10 @@ int main(void)
     }
     while (height < 0);
 
-    for (int i = 0; i == height, i++)
+    for (int i = 0; i < height; i++)
     {
         int whitespace_counter = height - i;
-        for (int j = 0; j == whitespace_counter; j++)
+        for (int j = 0; j < whitespace_counter; j++)
         {
             printf(' ')
         }
