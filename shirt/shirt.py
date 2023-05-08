@@ -39,20 +39,10 @@ def system_check(argument):
 
 def shirt_changer(input, output):
     with Image.open('shirt.png') as shirt:
-        shirt_new = ImageOps.fit(shirt, size= (1200, 1600))
         with Image.open(input) as old:
-            old.paste(shirt_new)
+            shirt_new = ImageOps.fit(shirt, size= old.size)
+            old.paste(shirt_new, shirt_new)
             old.save(output)
-
-
-
-
-
-
-    #with Image.open(output) as new:
-     #   pass
-
-
 
 if __name__ == '__main__':
     main()
