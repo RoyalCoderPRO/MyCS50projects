@@ -14,34 +14,39 @@ int main(void)
 
 }
 
-int start(void){
+int start(void)
+{
     int start;
-    do {
-    start = get_int("Start size: ");
+    do
+    {
+        start = get_int("Start size: ");
     }
     while (start < 9);
     return start;
 }
 
-int end(int n){
+int end(int n)
+{
+
     int end;
     do
     {
         end = get_int("End size: ");
     }
     while (end < n);
+
     return end;
 }
 
 int year(int population, int end){
     int current = 0;
-    do
+    while (population <= end)
     {
         int born = (int) population / 3;
         int dead = (int) population / 4;
         population = population + born - dead;
         current += 1;
     }
-    while(population <= end);
+
     return current;
 }
