@@ -25,11 +25,21 @@ int start(void){
 
 int end(int n){
     int end;
-    do {
-    end = get_int("End size: ");
+    do
+    {
+        end = get_int("End size: ");
     }
     while (end < n);
     return end;
 }
 
-int year()
+int year(int start, int end){
+    int year;
+    int population;
+    do
+    {
+        population = population / 4 - population / 3
+        year ++;
+    }
+    while()
+}
