@@ -41,7 +41,6 @@ def shirt_changer(input, output):
     with Image.open('shirt.png') as shirt:
         ImageOps.fit(shirt, size= (1200, 1600))
         with Image.open(input) as old:
-            print(old.size)
             old.paste(shirt)
             old.save(output)
 
