@@ -32,20 +32,21 @@ def system_check(argument):
     #Checking if file exists
     else:
         try:
-            with Image.open(file_name) as im:
+            with Image.open(file_name, mode='r'):
                 pass
         except FileNotFoundError:
             sys.exit('Input does not exist')
 
 def shirt_changer(input, output):
     with Image.open(input) as old:
+        pass
 
 
 
+    #with Image.open(output) as new:
+     #   pass
 
-    with Image.open(output) as new:
 
-        
 
 if __name__ == '__main__':
     main()
