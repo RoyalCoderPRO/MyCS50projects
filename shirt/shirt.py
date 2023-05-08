@@ -29,7 +29,7 @@ def system_check(argument):
             sys.exit('Input and output have different extensions')
     else:
         try:
-            with open(file_name, "r") as file:
+            with Image.open("hopper.jpg") as im:
                 pass
         except FileNotFoundError:
             sys.exit('Input does not exist')
