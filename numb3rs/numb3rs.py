@@ -7,7 +7,7 @@ def main():
 
 
 def validate(ip):
-    ...
+    re.search("\.\.\.\.", ip)
 
 
 ...
