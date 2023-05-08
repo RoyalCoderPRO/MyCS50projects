@@ -15,8 +15,9 @@ def system_check(argument):
     file_name = argument[1]
 
 
-    if file_name[-4:] != '.jpg':
+    if not file_name.endswith('.jpg') and not file_name.endswith('.jpeg') and not file_name.endswith('.png') :
         sys.exit('Invalid output')
+    elif 
     else:
         try:
             with open(file_name, "r") as file:
