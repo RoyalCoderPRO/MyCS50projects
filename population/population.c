@@ -4,15 +4,22 @@
 int main(void)
 {
     // TODO: Prompt for start size
-    int start = get_int("Start size: ");
+
     // TODO: Prompt for end size
-    int end = get_int("End size: ");
+
     // TODO: Calculate number of years until we reach threshold
-    int counter;
-    while (counter < end){
-        int born = start / 3
-        int dead = start / 4
-        
-    }
+
     // TODO: Print number of years
 }
+
+int start(void){
+    do {
+    int start = get_int("Start size: ");
+    }
+    while start < 9;
+}
+
+int end(void){
+    int end = get_int("End size: ");
+}
+
