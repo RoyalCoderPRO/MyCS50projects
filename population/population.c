@@ -42,8 +42,9 @@ int year(int population, int end){
         int born = population / 4;
         int dead = population / 3;
         population = born - dead;
-        current ++;
-        printf("%i\n", current);
+        current += 1;
+        printf("%i\n", population);
+        printf("%i\n", end);
     }
     while(population <= end);
     return current;
