@@ -35,12 +35,12 @@ int end(int n){
 }
 
 int year(int population, int end){
-    int year;
+    int year_num;
     do
     {
         population = int (population / 4) - int (population / 3);
-        year ++;
+        year_num ++;
     }
     while(population < end);
-    return year;
+    return year_num;
 }
