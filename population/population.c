@@ -12,8 +12,6 @@ int main(void)
     int year_num = year(start_num, end_num);
     printf("Years: %i\n", year_num);
 
-    // TODO: Calculate number of years until we reach threshold
-
 }
 
 int start(void){
@@ -40,12 +38,9 @@ int year(int population, int end){
     do
     {
         int born = (int) population / 3;
-        printf("%i\n", population);
         int dead = (int) population / 4;
-        population = born - dead;
+        population = population + born - dead;
         current += 1;
-        // printf("%i\n", population);
-        // printf("%i\n", end);
     }
     while(population <= end);
     return current;
