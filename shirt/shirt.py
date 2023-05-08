@@ -18,7 +18,7 @@ def system_check(argument):
         sys.exit('Too many command-line arguments')
 
     #Checking image type input
-    if not file_name.endswith('.jpg') and not file_name.endswith('.jpeg') and not file_name.endswith('.png'):
+    elif not file_name.endswith('.jpg') and not file_name.endswith('.jpeg') and not file_name.endswith('.png'):
         sys.exit('Invalid output')
 
     #Checking image type output and extension consistency
