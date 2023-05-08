@@ -32,7 +32,7 @@ def system_check(argument):
     #Checking if file exists
     else:
         try:
-            with Image.open("hopper.jpg") as im:
+            with Image.open(file_name) as im:
                 pass
         except FileNotFoundError:
             sys.exit('Input does not exist')
