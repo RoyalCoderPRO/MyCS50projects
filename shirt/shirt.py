@@ -1,5 +1,5 @@
 import sys
-from PIL import Image
+from PIL import Image, ImageOps
 
 def main():
     system_check(sys.argv)
@@ -39,6 +39,7 @@ def system_check(argument):
 
 def shirt_changer(input, output):
     with Image.open('shirt.png') as shirt:
+        ImageOps.fit(shirt, size= , bleed=0.0, centering=(0.5, 0.5))
         with Image.open(input) as old:
             old.paste(shirt)
             old.save(output)
