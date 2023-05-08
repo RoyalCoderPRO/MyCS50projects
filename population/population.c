@@ -41,7 +41,8 @@ int year(int population, int end){
     {
         population = population / 4 - population / 3;
         current ++;
+        printf("%i\n", current);
     }
-    while(population < end);
+    while(population <= end);
     return current;
 }
