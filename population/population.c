@@ -1,8 +1,9 @@
 #include <cs50.h>
 #include <stdio.h>
+
 int start(void);
 int end(int n);
-
+int year(int population, int end);
 int main(void)
 {
 
@@ -35,10 +36,10 @@ int end(int n){
 }
 
 int year(int population, int end){
-    int year_num;
+    int year_num = 0;
     do
     {
-        population = int (population / 4) - int (population / 3);
+        population = population / 4 - population / 3;
         year_num ++;
     }
     while(population < end);
