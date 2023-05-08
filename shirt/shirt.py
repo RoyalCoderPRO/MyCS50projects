@@ -18,7 +18,15 @@ def system_check(argument):
 
     if not file_name.endswith('.jpg') and not file_name.endswith('.jpeg') and not file_name.endswith('.png'):
         sys.exit('Invalid output')
-
+    elif file_name.endswith('.jpg'):
+        if not argument[2].lower().endswith('.jpg'):
+            sys.exit('Input and output have different extensions')
+    elif file_name.endswith('.jpeg'):
+        if not argument[2].lower().endswith('.jpeg'):
+            sys.exit('Input and output have different extensions')
+    elif file_name.endswith('.png'):
+        if not argument[2].lower().endswith('.png'):
+            sys.exit('Input and output have different extensions')
     else:
         try:
             with open(file_name, "r") as file:
