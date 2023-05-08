@@ -39,8 +39,9 @@ def system_check(argument):
 
 def shirt_changer(input, output):
     with Image.open('shirt.png') as shirt:
-        ImageOps.fit(shirt, size= , bleed=0.0, centering=(0.5, 0.5))
+        ImageOps.fit(shirt, size= (1200, 1600))
         with Image.open(input) as old:
+            print(old.size)
             old.paste(shirt)
             old.save(output)
 
