@@ -8,7 +8,8 @@ int main(void)
 
     int start = start();
     int end = end(start);
-
+    int year = year(start, end)
+    printf("Years: %i", year)
 
     // TODO: Calculate number of years until we reach threshold
 
@@ -40,5 +41,6 @@ int year(int population, int end){
         population = int (population / 4) - int (population / 3);
         year ++;
     }
-    while(population < end)
+    while(population < end);
+    return year;
 }
