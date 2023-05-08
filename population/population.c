@@ -41,6 +41,7 @@ int year(int population, int end){
     {
         population = population / 4 - population / 3;
         year_num ++;
+        print(year_num)
     }
     while(population < end);
     return year_num;
