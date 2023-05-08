@@ -40,7 +40,7 @@ int end(int n)
 
 int year(int population, int end){
     int current = 0;
-    while (population <= end)
+    while (population < end)
     {
         int born = (int) population / 3;
         int dead = (int) population / 4;
