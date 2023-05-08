@@ -1,5 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
+int start(void);
+int end(int n);
 
 int main(void)
 {
