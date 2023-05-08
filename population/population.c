@@ -38,7 +38,7 @@ int year(int start, int end){
     int population;
     do
     {
-        population = int (population / 4) - int (population / 3)
+        population = int (population / 4) - int (population / 3);
         year ++;
     }
     while()
