@@ -7,7 +7,8 @@ def main():
 
 
 def validate(ip):
-    re.search("\.\.\.\.", ip)
+    if re.search("\.\.\.\.", ip):
+        return True
 
 
 ...
