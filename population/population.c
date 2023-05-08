@@ -16,10 +16,11 @@ int start(void){
     do {
     int start = get_int("Start size: ");
     }
-    while start < 9;
+    while (start < 9);
 }
 
 int end(void){
+    
     int end = get_int("End size: ");
 }
 
