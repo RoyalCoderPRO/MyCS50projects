@@ -26,10 +26,7 @@ int main(void)
         {
             printf("#");
         }
-        for (int j = 0; j < whitespace_counter; j++)
-        {
-            printf(" ");
-        }
+
         printf("\n");
 
     }
