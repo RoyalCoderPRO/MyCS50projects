@@ -6,10 +6,10 @@ int end(int n);
 int main(void)
 {
 
-    int start = start(void);
-    int end = end(start);
-    int year = year(start, end);
-    printf("Years: %i\n", year);
+    int start_num = start();
+    int end_num = end(start_num);
+    int year_num = year(start_num, end_num);
+    printf("Years: %i\n", year_num);
 
     // TODO: Calculate number of years until we reach threshold
 
