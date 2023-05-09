@@ -6,7 +6,7 @@ def main():
 
 def parse(s):
     #Returns 'None' for no input
-    if s == None or re.search(r'/.[youtube]+/.',s):
+    if s == None or re.search(r".+youtube.+",s):
         return None
     source = re.split("src=", s)
     source = re.split('"', source[1])
@@ -15,7 +15,7 @@ def parse(s):
     slug = source.split('/')[-1]
     slug = 'https://youtu.be/embed/' + slug
     return slug
-#<iframe src="http://www.youtube.com/embed/xvFZjo5PgG0"></iframe>
+# <iframe src="http://www.youtube.com/embed/xvFZjo5PgG0"></iframe>
 # or re.search(r'[youtube]+',s)
 if __name__ == "__main__":
     main()
