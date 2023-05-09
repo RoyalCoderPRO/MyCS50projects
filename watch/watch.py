@@ -6,7 +6,7 @@ def main():
 
 def parse(s):
     #Returns 'None' for no input
-    if s == None or not re.search(".+youtube.+",s):
+    if s == None or not re.search("iframe.+youtube.+",s):
         return None
     source = re.split("src=", s)
     source = re.split('"', source[1])
