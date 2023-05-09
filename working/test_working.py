@@ -7,7 +7,8 @@ def main():
 
 
 def convert(s):
-    pass
+    if re.search(r'/i+:/i+',s):
+        return True
 
 if __name__ == "__main__":
     main()
