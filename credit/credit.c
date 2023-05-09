@@ -13,10 +13,10 @@ string card_type(long n)
 {
     //4003600000000014
     int evens = 0;
-    
+
     for (int i=2;i<16;i+=2)
     {
-        evens += (n % (10*i)) - (n % 10*(i-1));
+        evens += (n % (10*i));
         printf("%i\n", evens);
     }
     string hi = "hi";
