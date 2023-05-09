@@ -12,7 +12,9 @@ def parse(s):
     source = re.split('"', source[1])
     source = source[1].strip()
     source = source.strip('"')
-    return source
+    slug = source.split('/')[-1]
+    slug = 'https://youtu.be/embed/' + slug
+    return slug
 
 
 if __name__ == "__main__":
