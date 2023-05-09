@@ -1,10 +1,12 @@
 #include <cs50.h>
 #include <stdio.h>
 
+string card_type(long n);
 int main(void)
 {
     long credit = get_long("Number: ");
-    printf("%s\n",card_type(credit));
+    string word = card_type(credit);
+    printf("%s\n", word);
 }
 
 string card_type(long n)
@@ -14,7 +16,8 @@ string card_type(long n)
     for (i=1;i<16;i++)
     {
         evens += (n % (10*i)) - (n % 10*(i-1));
-        printf("%i", evens);
+        printf("%i\n", evens);
     }
-    return 
+    string hi = "hi"
+    return hi
 }
