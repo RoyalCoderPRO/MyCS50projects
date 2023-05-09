@@ -9,5 +9,6 @@ int main(void)
 
 string card_type(long n)
 {
-    long n
+    //4003600000000014
+    for (i=0;i)
 }
