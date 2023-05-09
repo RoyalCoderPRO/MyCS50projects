@@ -11,9 +11,9 @@ int main(void)
 
 string card_type(long n)
 {
-    //4003600000000014
+    //4003600000000140
     int evens = 0;
-    for (int i=1;i<16;i++)
+    for (int i=2;i<16;i+=2)
     {
         evens += (n % (10*i)) - (n % 10*(i-1));
         printf("%i\n", evens);
