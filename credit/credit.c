@@ -11,7 +11,7 @@ int main(void)
 
 string card_type(long n)
 {
-    //4003600000000140
+    //4003600000000014
     int evens = 0;
     for (int i=2;i<16;i+=2)
     {
