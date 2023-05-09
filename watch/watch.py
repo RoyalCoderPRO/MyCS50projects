@@ -9,11 +9,8 @@ def parse(s):
     if s == None:
         return None
     source = re.split("src=", s)
-    source = re.split(r'/"', source[1])
-    print(source)
-    source = re.split(r'/"', source[0])
-    print(source)
-    source = source[0].strip()
+    source = re.split('"', source[1])
+    source = source[1].strip()
     source = source.strip('"')
     return source
 
