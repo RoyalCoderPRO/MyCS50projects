@@ -5,10 +5,12 @@ def main():
 
 
 def validate(ip):
-    if not re.search(r"[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+", ip):
+    if not re.fullmatch(r"\d+\.\d+\.\d+\.\d+", ip):
         return False
     ips = ip.split('.')
-    elif
+    for i in ips:
+        if not 0<= int(i) <= 255:
+            return False
     else:
         return True
 
