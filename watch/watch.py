@@ -6,6 +6,8 @@ def main():
 
 def parse(s):
     #Returns 'None' for no input
+    truth = re.search(".+youtube.+",s)
+    print(truth)
     if s == None or re.search(".+youtube.+",s):
         return None
     source = re.split("src=", s)
