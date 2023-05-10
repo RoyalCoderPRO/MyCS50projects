@@ -1,33 +1,58 @@
 #include <cs50.h>
 #include <stdio.h>
 
-string card_type(long n);
+
+int card_type(long n);
+long power(int n, int p);
+int digit(int n);
+
+
 int main(void)
 {
     long credit = get_long("Number: ");
-    string word = card_type(credit);
-    printf("%s\n", word);
+    int total = card_type(credit);
+    printf("%i\n", total);
 }
 
-string card_type(long n)
+int card_type(long n)
 {
     //4003600000000014
     int evens = 0;
 
-    for (int i=2;i<16;i+=2)
+    for (int i=2;i<=16;i+=2)
     {
-        evens += (n % (10**i));
-        printf("%i\n", evens);
+        evens_first += ((n % power(10, i)) / power(10,i-1));
+        if(digit(evens_first<1))
+        {
+            
+        }
+
     }
-    string hi = "hi";
-    return hi;
+    return evens;
 }
 
-int power(int n, int p)
+long power(int n, int p)
 {
-    for (int i=0; i<p, i++)
+    if (p == 0)
     {
-        
+        return 1;
     }
-    return m
+    long m = n;
+    for (int i=1; i<p; i++)
+    {
+        m *= n;
+    }
+    return m;
+}
+
+int digit(int n)
+{
+    int m;
+    int counter = 0;
+    for (int i= 1; m = 0 ;i++)
+    {
+        m = n/power(10,i);
+        counter ++;
+    }
+    return counter;
 }
