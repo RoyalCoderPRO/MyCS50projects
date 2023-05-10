@@ -14,7 +14,7 @@ int main(void)
 {
     long credit = get_long("Number: ");
 
-    if (len(credit) > 13 || len(credit) < 16)
+    if (len(credit) < 13 || len(credit) > 16)
     {
         printf("%i\n", len(credit));
         printf("INVALID\n");
@@ -27,7 +27,7 @@ int main(void)
         {
             printf("VISA\n");
         }
-    else if (len(credit) ==16)
+    else if (len(credit) == 16)
     {
         printf("MASTERCARD\n");
     }
