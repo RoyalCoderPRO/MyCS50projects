@@ -20,20 +20,30 @@ int main(void)
         printf("INVALID\n");
         return 0;
     }
-
+    int first_digit = indexer(credit, len(credit))
     int total = totaler(credit);
 
-    if (indexer(total, 1) == 0 && indexer(credit, len(credit)) == 4)
+    if (indexer(total, 1) == 0 && first_digit == 4)
         {
             printf("VISA\n");
+            return 0;
         }
-    else if (len(credit) == 16)
+        
+    int second_digit = indexer(credit, len(credit)-1);
+    else if (len(credit) == 16 && first_digit == 5)
     {
         printf("MASTERCARD\n");
     }
+    else if (len(credit) == 15 && first_digit == 3)
+    {
+        if indexer
+        {
+            printf("AMEX\n");
+        }
+    }
     else
     {
-        printf("AMEX\n");
+        printf("INVALID\n")
     }
     printf("%i\n", total);
 }
