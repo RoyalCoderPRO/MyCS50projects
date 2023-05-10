@@ -25,7 +25,8 @@ int totaler(long n)
         int number = indexer(n, i)*2;
         if (digit(number)>1)
         {
-            for (int j= 0; j< digit(number); j++)
+            int digit_const = digit(number);
+            for (int j= 0; j< digit_const; j++)
                 {
                 number += indexer(number,i);
                 }
