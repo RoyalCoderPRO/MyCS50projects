@@ -13,7 +13,7 @@ int main(void)
 {
     long credit = get_long("Number: ");
     int total = totaler(credit);
-    if (iterator(total, digit(total)))
+    if (iterator(total, 1))
     printf("%i\n", total);
 }
 
@@ -83,6 +83,7 @@ int digit(long n)
 
 int indexer(long n, int i)
 {
+    //iterates right to left
     int digit;
     digit = ((n % power(10, i)) / power(10,i-1));
     return digit;
