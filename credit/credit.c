@@ -13,16 +13,14 @@ int totaler(long n);
 int main(void)
 {
     long credit = get_long("Number: ");
-    if 
-    else
-    {
-        int total = totaler(credit);
 
-        if (indexer(total, 1) == 0)
-            {
-                printf("VISA\n");
-            }
-    }
+    int total = totaler(credit);
+
+    if (indexer(total, 1) == 0)
+        {
+            printf("VISA\n");
+        }
+    else if ()
     printf("%i\n", total);
 }
 
