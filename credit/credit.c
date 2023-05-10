@@ -16,7 +16,7 @@ string card_type(long n)
 
     for (int i=2;i<16;i+=2)
     {
-        evens += (n % (10*i));
+        evens += (n % (10**i));
         printf("%i\n", evens);
     }
     string hi = "hi";
