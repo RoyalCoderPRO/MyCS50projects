@@ -22,3 +22,5 @@ string card_type(long n)
     string hi = "hi";
     return hi;
 }
+
+int power()
