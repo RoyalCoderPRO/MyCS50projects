@@ -6,19 +6,25 @@ int even_totaler(long n);
 long power(int n, int p);
 int digit(long n);
 int indexer(long n, int i);
-int total(long n);
+int totaler(long n);
 
 
 int main(void)
 {
     long credit = get_long("Number: ");
-    int total = even_totaler(credit);
+    int total = totaler(credit);
+    if (iterator(total, digit(total)))
     printf("%i\n", total);
 }
 
-int total(long n)
+int totaler(long n)
 {
-    
+    int current_val = even_totaler(n);
+    for (int i=1; i<= digit(n);i +=2 )
+    {
+        current_val += indexer(n, i);
+    }
+    return current_val;
 }
 
 int even_totaler(long n)
@@ -38,7 +44,6 @@ int even_totaler(long n)
                 }
             number = new_number;
         }
-        printf("%i\n", number);
         total += number;
     }
     return total;
