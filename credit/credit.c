@@ -54,17 +54,17 @@ long power(int n, int p)
 
 int digit(long n)
 {
-    int m;
+    long m;
     int counter = 0;
     int i = 1;
     do
     {
         m = n/power(10,i);
-        printf("%i\n", m);
         i ++;
         counter ++;
     }
     while(m>0);
+    printf("%)
     return counter;
 }
 
