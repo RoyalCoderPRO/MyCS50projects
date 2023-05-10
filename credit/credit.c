@@ -47,7 +47,7 @@ int digit(int n)
     int counter = 0;
     do
     {
-        int i = 1;
+        int i = 2;
         m = n/power(10,i);
         i ++;
         counter ++;
