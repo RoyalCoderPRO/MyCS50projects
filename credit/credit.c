@@ -25,7 +25,7 @@ int main(void)
 
     if (len(credit) == 16 && first_digit == 5)
     {
-        if (second_digit >= 1 || second_digit <= 5)
+        if (second_digit >= 1 && second_digit <= 5)
         {
             printf("MASTERCARD\n");
             return 0;
