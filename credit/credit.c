@@ -23,6 +23,7 @@ int totaler(long n)
     for (int i=2;i<=digit(n);i+=2)
     {
         int number = indexer(n, i)*2;
+        printf("%i\n", number);
         if (digit(number)==2)
         {
             for (int j= 1; j <= 2; j++)
