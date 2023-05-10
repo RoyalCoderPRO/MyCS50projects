@@ -4,7 +4,7 @@
 
 int totaler(long n);
 long power(int n, int p);
-int digit(int n);
+int digit(long n);
 int indexer(long n, int i);
 
 
@@ -52,14 +52,15 @@ long power(int n, int p)
 }
 
 
-int digit(int n)
+int digit(long n)
 {
     int m;
     int counter = 0;
+    int i = 1;
     do
     {
-        int i = 1;
         m = n/power(10,i);
+        printf("%i\n", m);
         i ++;
         counter ++;
     }
