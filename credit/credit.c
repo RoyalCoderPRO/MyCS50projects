@@ -5,7 +5,7 @@
 int totaler(long n);
 long power(int n, int p);
 int digit(int n);
-int iterator(long n, int i);
+int indexer(long n, int i);
 
 
 int main(void)
@@ -22,14 +22,15 @@ int totaler(long n)
 
     for (int i=2;i<=16;i+=2)
     {
-        int number = iterator(n, i)*2;
+        int number = indexer(n, i)*2;
         if (digit(number)>1)
         {
             for (int i= 0; i< digit(number); i++)
-            number += iterator(number,i)
-
-            iterator(n,i);
+                {
+                number += indexer(number,i);
+                }
         }
+        total += number;
     }
     return total;
 }
@@ -63,7 +64,7 @@ int digit(int n)
     return counter;
 }
 
-int iterator(long n, int i)
+int indexer(long n, int i)
 {
     int digit;
     digit = ((n % power(10, i)) / power(10,i-1));
