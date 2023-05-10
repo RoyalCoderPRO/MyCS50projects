@@ -22,10 +22,11 @@ int totaler(long n)
 
     for (int i=2;i<=16;i+=2)
     {
-        total += iterator(n, i);
-        if (digit(total)>1)
+        int number = iterator(n, i)*2;
+        if (digit(number)>1)
         {
-            for (int i= 0; i< digit(total); i++)
+            for (int i= 0; i< digit(number); i++)
+            number += iterator(number,i)
 
             iterator(n,i);
         }
