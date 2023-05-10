@@ -61,6 +61,7 @@ int digit(int n)
         counter ++;
     }
     while(m>0);
+    printf("%i\n", counter);
     return counter;
 }
 
