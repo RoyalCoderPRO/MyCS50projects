@@ -8,14 +8,16 @@ int digit(long n);
 int indexer(long n, int i);
 int totaler(long n);
 
+    //4003600000000014
 
 int main(void)
 {
     long credit = get_long("Number: ");
-    long total = totaler(credit);
-    if (iterator(total, 1) == 0)
+    int total = totaler(credit);
+
+    if (indexer(total, 1) == 0)
         {
-            printf("VISA");
+            printf("VISA\n");
         }
     printf("%i\n", total);
 }
@@ -32,7 +34,7 @@ int totaler(long n)
 
 int even_totaler(long n)
 {
-    //4003600000000014
+
     int total = 0;
 
     for (int i=2;i<=digit(n);i+=2)
