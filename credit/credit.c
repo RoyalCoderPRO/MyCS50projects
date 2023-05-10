@@ -2,20 +2,20 @@
 #include <stdio.h>
 
 
-int card_type(long n);
+int totaler(long n);
 long power(int n, int p);
 int digit(int n);
-int iterator(int n, int i);
+int iterator(long n, int i);
 
 
 int main(void)
 {
     long credit = get_long("Number: ");
-    int total = card_type(credit);
+    int total = totaler(credit);
     printf("%i\n", total);
 }
 
-int card_type(long n)
+int totaler(long n)
 {
     //4003600000000014
     int evens = 0;
@@ -23,6 +23,10 @@ int card_type(long n)
     for (int i=2;i<=16;i+=2)
     {
         evens += iterator(n, i);
+        if (digit(evens)>1)
+        {
+            
+        }
     }
     return evens;
 }
@@ -56,7 +60,7 @@ int digit(int n)
     return counter;
 }
 
-int iterator(int n, int i)
+int iterator(long n, int i)
 {
     int digit;
     digit = ((n % power(10, i)) / power(10,i-1));
