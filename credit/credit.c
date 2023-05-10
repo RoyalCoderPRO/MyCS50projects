@@ -8,7 +8,7 @@ int len(long n);
 int indexer(long n, int i);
 int totaler(long n);
 
-    //4003600000000014
+//4003600000000014
 
 int main(void)
 {
@@ -21,7 +21,7 @@ int main(void)
         return 0;
     }
     int first_digit = indexer(credit, len(credit));
-    int second_digit = indexer(credit, len(credit)-1);
+    int second_digit = indexer(credit, len(credit) - 1);
 
     if (len(credit) == 16 && first_digit == 5)
     {
@@ -42,7 +42,7 @@ int main(void)
     }
 
     int total = totaler(credit);
-    if(indexer(total, 1) == 0 && first_digit == 4)
+    if (indexer(total, 1) == 0 && first_digit == 4)
     {
         printf("VISA\n");
         return 0;
@@ -69,16 +69,16 @@ int even_totaler(long n)
 
     int total = 0;
 
-    for (int i=2;i<=len(n);i+=2)
+    for (int i = 2; i <=l en(n); i += 2)
     {
-        int number = indexer(n, i)*2;
-        if (len(number)==2)
+        int number = indexer(n, i) * 2;
+        if (len(number) == 2)
         {
             int new_number = 0;
-            for (int j= 1; j <= 2; j++)
-                {
+            for (int j = 1; j <= 2; j++)
+            {
                 new_number += indexer(number,j);
-                }
+            }
             number = new_number;
         }
         total += number;
@@ -94,7 +94,7 @@ long power(int n, int p)
         return 1;
     }
     long m = n;
-    for (int i=1; i<p; i++)
+    for (int i = 1; i < p; i++)
     {
         m *= n;
     }
@@ -109,11 +109,11 @@ int len(long n)
     int i = 1;
     do
     {
-        m = n/power(10,i);
+        m = n / power(10, i);
         i ++;
         counter ++;
     }
-    while(m>0);
+    while (m > 0);
     return counter;
 }
 
@@ -122,6 +122,6 @@ int indexer(long n, int i)
 {
     //iterates right to left
     int digit;
-    digit = ((n % power(10, i)) / power(10,i-1));
+    digit = ((n % power(10, i)) / power(10, i - 1));
     return digit;
 }
