@@ -28,20 +28,21 @@ int main(void)
             printf("VISA\n");
             return 0;
         }
-        
+
     int second_digit = indexer(credit, len(credit)-1);
     else if (len(credit) == 16 && first_digit == 5)
     {
         printf("MASTERCARD\n");
+        return 0;
     }
     else if (len(credit) == 15 && first_digit == 3)
     {
-        if indexer
+        if (second_digit == 4 || second_digit == 7)
         {
             printf("AMEX\n");
         }
     }
-    else
+    
     {
         printf("INVALID\n")
     }
