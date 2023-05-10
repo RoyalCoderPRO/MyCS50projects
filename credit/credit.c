@@ -23,4 +23,11 @@ string card_type(long n)
     return hi;
 }
 
-int power()
+int power(int n, int p)
+{
+    for (int i=0; i<p, i++)
+    {
+        
+    }
+    return m
+}
