@@ -57,7 +57,7 @@ int main(void)
 int totaler(long n)
 {
     int current_val = even_totaler(n);
-    for (int i=1; i<= len(n);i +=2 )
+    for (int i=1; i<= len(n); i +=2 )
     {
         current_val += indexer(n, i);
     }
@@ -69,7 +69,7 @@ int even_totaler(long n)
 
     int total = 0;
 
-    for (int i = 2; i <=l en(n); i += 2)
+    for (int i = 2; i <= len(n); i += 2)
     {
         int number = indexer(n, i) * 2;
         if (len(number) == 2)
@@ -77,7 +77,7 @@ int even_totaler(long n)
             int new_number = 0;
             for (int j = 1; j <= 2; j++)
             {
-                new_number += indexer(number,j);
+                new_number += indexer(number, j);
             }
             number = new_number;
         }
