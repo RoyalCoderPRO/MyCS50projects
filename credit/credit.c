@@ -23,7 +23,7 @@ int main(void)
 
     int total = totaler(credit);
 
-    if (indexer(total, 1) == 0 && indexer(credit, len(credit) == 4))
+    if (indexer(total, 1) == 0 && indexer(credit, len(credit)) == 4)
         {
             printf("VISA\n");
         }
