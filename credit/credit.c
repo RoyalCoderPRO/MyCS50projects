@@ -49,7 +49,10 @@ int main(void)
         return 0;
     }
 
-    printf("INVALID\n")
+    else
+    {
+        printf("INVALID\n");
+    }
 
     printf("%i\n", total);
 }
