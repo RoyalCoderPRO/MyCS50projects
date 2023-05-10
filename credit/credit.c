@@ -20,15 +20,14 @@ int totaler(long n)
     //4003600000000014
     int total = 0;
 
-    for (int i=2;i<=16;i+=2)
+    for (int i=2;i<=digit(n);i+=2)
     {
         int number = indexer(n, i)*2;
-        if (digit(number)>1)
+        if (digit(number)==2)
         {
-            int digit_const = digit(number);
-            for (int j= 0; j< digit_const; j++)
+            for (int j= 1; j <= 2; j++)
                 {
-                number += indexer(number,i);
+                number += indexer(number,j);
                 }
         }
         total += number;
