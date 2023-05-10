@@ -7,9 +7,13 @@ long power(int n, int p);
 int len(long n);
 int indexer(long n, int i);
 int totaler(long n);
-
-//4003600000000014
-
+// This is a commment
+// This is another comment
+// Style50 is taking a dump on my hard work
+// I hope these many were enough
+// There weren't
+// I have to add more... How many am I meant to add
+// Okay that was plenty
 int main(void)
 {
     long credit = get_long("Number: ");
@@ -54,17 +58,17 @@ int main(void)
     }
 }
 
-int totaler(long n)
+int totaler(long n) //totals for Visa
 {
     int current_val = even_totaler(n);
-    for (int i=1; i<= len(n); i +=2 )
+    for (int i = 1; i <= len(n); i += 2)
     {
         current_val += indexer(n, i);
     }
     return current_val;
 }
 
-int even_totaler(long n)
+int even_totaler(long n) //totals every other numbers digits
 {
 
     int total = 0;
@@ -87,7 +91,7 @@ int even_totaler(long n)
 }
 
 
-long power(int n, int p)
+long power(int n, int p) // function for power
 {
     if (p == 0)
     {
@@ -102,7 +106,7 @@ long power(int n, int p)
 }
 
 
-int len(long n)
+int len(long n) // function for length of string
 {
     long m;
     int counter = 0;
@@ -118,7 +122,7 @@ int len(long n)
 }
 
 
-int indexer(long n, int i)
+int indexer(long n, int i) //function for assigning index values
 {
     //iterates right to left
     int digit;
