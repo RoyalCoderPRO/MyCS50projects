@@ -2,20 +2,26 @@
 #include <stdio.h>
 
 
-int totaler(long n);
+int even_totaler(long n);
 long power(int n, int p);
 int digit(long n);
 int indexer(long n, int i);
+int total(long n);
 
 
 int main(void)
 {
     long credit = get_long("Number: ");
-    int total = totaler(credit);
+    int total = even_totaler(credit);
     printf("%i\n", total);
 }
 
-int totaler(long n)
+int total(long n)
+{
+    
+}
+
+int even_totaler(long n)
 {
     //4003600000000014
     int total = 0;
@@ -23,14 +29,16 @@ int totaler(long n)
     for (int i=2;i<=digit(n);i+=2)
     {
         int number = indexer(n, i)*2;
-        printf("%i\n", number);
         if (digit(number)==2)
         {
+            int new_number = 0;
             for (int j= 1; j <= 2; j++)
                 {
-                number += indexer(number,j);
+                new_number += indexer(number,j);
                 }
+            number = new_number;
         }
+        printf("%i\n", number);
         total += number;
     }
     return total;
@@ -64,7 +72,6 @@ int digit(long n)
         counter ++;
     }
     while(m>0);
-    printf("%)
     return counter;
 }
 
