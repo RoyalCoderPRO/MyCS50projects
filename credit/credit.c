@@ -4,7 +4,7 @@
 
 int even_totaler(long n);
 long power(int n, int p);
-int digit(long n);
+int len(long n);
 int indexer(long n, int i);
 int totaler(long n);
 
@@ -14,20 +14,34 @@ int main(void)
 {
     long credit = get_long("Number: ");
 
+    if (len(credit) > 13 || len(credit) < 16)
+    {
+        printf("%i\n", len(credit));
+        printf("INVALID\n");
+        return 0;
+    }
+
     int total = totaler(credit);
 
     if (indexer(total, 1) == 0)
         {
             printf("VISA\n");
         }
-    else if ()
+    else if (len(credit) ==16)
+    {
+        printf("MASTERCARD\n");
+    }
+    else
+    {
+        printf("AMEX\n");
+    }
     printf("%i\n", total);
 }
 
 int totaler(long n)
 {
     int current_val = even_totaler(n);
-    for (int i=1; i<= digit(n);i +=2 )
+    for (int i=1; i<= len(n);i +=2 )
     {
         current_val += indexer(n, i);
     }
@@ -39,10 +53,10 @@ int even_totaler(long n)
 
     int total = 0;
 
-    for (int i=2;i<=digit(n);i+=2)
+    for (int i=2;i<=len(n);i+=2)
     {
         int number = indexer(n, i)*2;
-        if (digit(number)==2)
+        if (len(number)==2)
         {
             int new_number = 0;
             for (int j= 1; j <= 2; j++)
@@ -72,7 +86,7 @@ long power(int n, int p)
 }
 
 
-int digit(long n)
+int len(long n)
 {
     long m;
     int counter = 0;
