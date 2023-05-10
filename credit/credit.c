@@ -18,17 +18,19 @@ int main(void)
 int totaler(long n)
 {
     //4003600000000014
-    int evens = 0;
+    int total = 0;
 
     for (int i=2;i<=16;i+=2)
     {
-        evens += iterator(n, i);
-        if (digit(evens)>1)
+        total += iterator(n, i);
+        if (digit(total)>1)
         {
-            
+            for (int i= 0; i< digit(total); i++)
+
+            iterator(n,i);
         }
     }
-    return evens;
+    return total;
 }
 
 long power(int n, int p)
