@@ -35,6 +35,7 @@ int totaler(long n)
     return total;
 }
 
+
 long power(int n, int p)
 {
     if (p == 0)
@@ -49,6 +50,7 @@ long power(int n, int p)
     return m;
 }
 
+
 int digit(int n)
 {
     int m;
@@ -61,9 +63,9 @@ int digit(int n)
         counter ++;
     }
     while(m>0);
-    printf("%i\n", counter);
     return counter;
 }
+
 
 int indexer(long n, int i)
 {
