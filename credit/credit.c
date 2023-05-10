@@ -5,6 +5,7 @@
 int card_type(long n);
 long power(int n, int p);
 int digit(int n);
+int iterator(int n, int i);
 
 
 int main(void)
@@ -44,11 +45,14 @@ int digit(int n)
 {
     int m;
     int counter = 0;
-    for (int i= 1; m = 0 ;i++)
+    do
     {
+        int i = 1;
         m = n/power(10,i);
+        i ++;
         counter ++;
     }
+    while(m>0);
     return counter;
 }
 
