@@ -44,10 +44,10 @@ int main(void)
     int total = totaler(credit);
 
     else if (indexer(total, 1) == 0 && first_digit == 4)
-        {
-            printf("VISA\n");
-            return 0;
-        }
+    {
+        printf("VISA\n");
+        return 0;
+    }
 
     printf("INVALID\n")
 
