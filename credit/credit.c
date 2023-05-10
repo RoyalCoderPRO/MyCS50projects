@@ -21,12 +21,7 @@ int card_type(long n)
 
     for (int i=2;i<=16;i+=2)
     {
-        evens_first += ((n % power(10, i)) / power(10,i-1));
-        if(digit(evens_first<1))
-        {
-            
-        }
-
+        evens += iterator(n, i);
     }
     return evens;
 }
@@ -55,4 +50,11 @@ int digit(int n)
         counter ++;
     }
     return counter;
+}
+
+int iterator(int n, int i)
+{
+    int digit;
+    digit = ((n % power(10, i)) / power(10,i-1));
+    return digit;
 }
