@@ -32,7 +32,7 @@ int main(void)
         }
     }
 
-    else if (len(credit) == 15 && first_digit == 3)
+    if (len(credit) == 15 && first_digit == 3)
     {
         if (second_digit == 4 || second_digit == 7)
         {
@@ -42,7 +42,7 @@ int main(void)
     }
 
     int total = totaler(credit);
-    else if(indexer(total, 1) == 0 && first_digit == 4)
+    if(indexer(total, 1) == 0 && first_digit == 4)
     {
         printf("VISA\n");
         return 0;
@@ -52,8 +52,6 @@ int main(void)
     {
         printf("INVALID\n");
     }
-
-    printf("%i\n", total);
 }
 
 int totaler(long n)
