@@ -20,17 +20,10 @@ int main(void)
         printf("INVALID\n");
         return 0;
     }
-    int first_digit = indexer(credit, len(credit))
-    int total = totaler(credit);
-
-    if (indexer(total, 1) == 0 && first_digit == 4)
-        {
-            printf("VISA\n");
-            return 0;
-        }
-
+    int first_digit = indexer(credit, len(credit));
     int second_digit = indexer(credit, len(credit)-1);
-    else if (len(credit) == 16 && first_digit == 5)
+
+    if (len(credit) == 16 && first_digit == 5)
     {
         if (second_digit < 1 || second_digit > 5)
         {
@@ -38,6 +31,7 @@ int main(void)
             return 0;
         }
     }
+
     else if (len(credit) == 15 && first_digit == 3)
     {
         if (second_digit == 4 || second_digit == 7)
@@ -46,6 +40,15 @@ int main(void)
             return 0;
         }
     }
+
+    int total = totaler(credit);
+
+    else if (indexer(total, 1) == 0 && first_digit == 4)
+        {
+            printf("VISA\n");
+            return 0;
+        }
+
     printf("INVALID\n")
 
     printf("%i\n", total);
