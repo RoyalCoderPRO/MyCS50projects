@@ -5,8 +5,8 @@ def main():
 
 
 def convert(s):
-    if re.match(r'1?\d?:[0-5]\d+',s):
-        return True
+    match = re.findall(r'1?\d?:[0-5]\d+',s)
+    return match
 
 if __name__ == "__main__":
     main()
