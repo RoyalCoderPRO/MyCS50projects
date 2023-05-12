@@ -5,7 +5,9 @@ def main():
 
 
 def convert(s):
-    match = re.search(r'1?\d?:[0-5]\d+',s)
+    first, second = re.findall(r'[1-91112]?:[0-5]\d+',s)
+    print(first + second)
+
 
 if __name__ == "__main__":
     main()
