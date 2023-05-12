@@ -5,7 +5,7 @@ def main():
 
 
 def convert(s):
-    if re.search(r'1?\d?:[0-5]?\d?+',s):
+    if re.fullmatch(r'1?\d?:[0-5]?\d?+',s):
         return True
 
 if __name__ == "__main__":
