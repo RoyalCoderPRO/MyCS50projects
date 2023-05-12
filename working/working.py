@@ -12,9 +12,9 @@ def convert(s):
         if hour > 12:
             raise ValueError
         if 'AM' in times:
-            hour = int(times.strip('AM'))
+            hour = int(times.strip(' AM'))
         elif 'PM' in times:
-            hour = int(times.strip('PM'))
+            hour = int(times.strip(' PM'))
             hour += 12
 
         print(hour)
