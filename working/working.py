@@ -5,8 +5,12 @@ def main():
 
 
 def convert(s):
-    first, second = re.findall(r'[1-91112]?:[0-5]\d+',s)
-    print(first + second)
+    time_range = re.findall(r'1?\d?:[0-5]\d+',s)
+    for times in time_range:
+        hour = times.split(':')[0]
+        if hour > 12:
+            return 0
+
 
 
 if __name__ == "__main__":
