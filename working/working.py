@@ -5,8 +5,11 @@ def main():
 
 
 def convert(s):
-    match = re.findall(r'1?\d?:[0-5]\d+',s)
-    new_match = re.sub(r'1?\d?:[0-5]\d+', ,s)
+    match = re.search(r'1?\d?:[0-5]\d+',s)
+    if match:
+        first, second = match.groups()
+        
+
     return match
 
 if __name__ == "__main__":
