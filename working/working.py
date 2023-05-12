@@ -6,6 +6,7 @@ def main():
 
 def convert(s):
     time_range = re.findall(r'1?\d?:*[0-5]*\d*\s.M',s)
+    print(time_range)
     for times in time_range:
         if ':' in times:
             hour = int(times.split(':')[0])
