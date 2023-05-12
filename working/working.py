@@ -7,7 +7,7 @@ def main():
 
 
 def convert(s):
-    if re.search(r'[0]:\d\d+',s):
+    if re.search(r'[1]\d:\d\d+',s):
         return True
 
 if __name__ == "__main__":
