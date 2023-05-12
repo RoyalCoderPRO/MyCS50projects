@@ -9,11 +9,14 @@ def convert(s):
     for times in time_range:
         if ':' in times:
             hour = int(times.split(':')[0])
-        else:
-            hour = times.strip('AM')
-            hour = times.strip('PM')
+        elif 'AM' in times:
+            hour = int(times.strip('AM'))
+            
+        elif 'PM' in times:
+            hour = int(times.strip('PM'))
         if hour > 12:
             raise ValueError
+        print(hour)
 
 
 
