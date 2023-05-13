@@ -8,6 +8,7 @@ def convert(s):
     time_range = re.findall(r'1?\d?:*[0-5]*\d*\s.M',s)
     print(time_range)
     pm_yes = False
+    new_time_range = []
     for times in time_range:
         if 'AM' in times:
             times = times.strip(' AM')
@@ -23,6 +24,11 @@ def convert(s):
             raise ValueError
         if pm_yes:
             hour += 12
+        if minute:
+            new_time_range.append(hour + ':' + minute)
+        else:
+            new_time_range.append(hour)
+
 
     return hour
 
