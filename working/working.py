@@ -27,6 +27,11 @@ def convert(s):
             raise ValueError
         if pm_yes:
             hour += 12
+            if hour == 24:
+                hour = 12
+        else:
+            if hour == 12:
+                hour = 0
         hour = str(hour)
         if len(hour) == 1:
             hour = '0' + hour
