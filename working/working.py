@@ -23,6 +23,7 @@ def convert(s):
             hour, minute = int(hour), int(minute)
         else:
             hour = int(times)
+            minute = False
         if hour > 12:
             raise ValueError
         if pm_yes:
@@ -30,7 +31,7 @@ def convert(s):
         hour = str(hour)
         if len(hour) == 1:
             hour = '0' + hour
-        if minute == True:
+        if minute:
             minute = str(minute)
             new_time_range.append(hour + ':' + minute)
         else:
