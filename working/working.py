@@ -30,7 +30,7 @@ def convert(s):
         hour = str(hour)
         if len(hour) == 1:
             hour = '0' + hour
-        if minute:
+        if type(minute) == int:
             minute = str(minute)
             new_time_range.append(hour + ':' + minute)
         else:
