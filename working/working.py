@@ -27,10 +27,11 @@ def convert(s):
             raise ValueError
         if pm_yes:
             hour += 12
-        hour, minute = str(hour), str(minute)
+        hour = str(hour)
         if len(hour) == 1:
             hour = '0' + hour
         if minute:
+            minute = str(minute)
             new_time_range.append(hour + ':' + minute)
         else:
             new_time_range.append(hour + ':00')
