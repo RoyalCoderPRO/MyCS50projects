@@ -33,7 +33,7 @@ def convert(s):
             new_time_range.append(hour + ':00')
 
 
-    return new_time_range
+    return new_time_range[0] + ' to ' + new_time_range[1]
 
 
 
