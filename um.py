@@ -6,7 +6,7 @@ def main():
 
 
 def count(s):
-    all_ums = re.search('um'.lower(), s)
+    all_ums = re.findall('um', s)
     print(all_ums)
 
 if __name__ == "__main__":
