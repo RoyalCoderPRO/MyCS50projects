@@ -5,10 +5,10 @@ def main():
 
 
 def convert(s):
-    if not re.search(r'1?\d{1}:*[0-5][0-9]\s.M\sto\s1?\d?:*[0-5]*\d*\s.M', s):
+    if not re.search(r'1?\d:*[0-5]?\d?\s.M\sto\s1?\d?:?[0-5]?\d?\s.M', s):
         raise ValueError
 
-    time_range = re.findall(r'1?\d?:*[0-5]*\d*\s.M',s)
+    time_range = re.findall(r'1?\d?:?[0-5]?\d?\s.M',s)
     pm_yes = False
     new_time_range = []
     for times in time_range:
