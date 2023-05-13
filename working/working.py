@@ -10,14 +10,18 @@ def convert(s):
     pm_yes = False
     for times in time_range:
         if 'AM' in times:
-            times = int(times.strip(' AM'))
+            times = times.strip(' AM')
         elif 'PM' in times:
-            times = int(times.strip(' PM'))
+            times = times.strip(' PM')
             pm_yes = True
         if ':' in times:
-            hour = int(times.split(':')[0])
+            hour, minute = times.split(':')
+            hour, minute = int(hour), int(minute)
         if hour > 12:
             raise ValueError
+        if pm_yes:
+            hour += 12
+
 
         print(hour)
 
