@@ -17,14 +17,14 @@ def convert(s):
         if ':' in times:
             hour, minute = times.split(':')
             hour, minute = int(hour), int(minute)
+        else:
+            hour = int(times)
         if hour > 12:
             raise ValueError
         if pm_yes:
             hour += 12
 
-
-        print(hour)
-
+    return hour
 
 
 
