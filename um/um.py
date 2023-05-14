@@ -7,9 +7,7 @@ def main():
 
 def count(s):
     counter = 0
-    all_ums = re.findall(r'\W?um\b', s)
-    print(all_ums)
-
+    all_ums = re.findall(r'\bum\b', s)
     for um in all_ums:
         counter += 1
 
