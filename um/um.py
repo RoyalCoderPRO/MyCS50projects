@@ -2,7 +2,7 @@ import re
 
 
 def main():
-    print(count(input("Text: ")))
+    print(count(input("Text: ").lower()))
 
 
 def count(s):
