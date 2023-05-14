@@ -8,15 +8,13 @@ def time_calc(d):
     abs = date.today()
     try:
         time_birth = date.fromisoformat(d)
-        print(abs)
         new_time = abs - time_birth
-        print(new_time)
 
     except:
         sys.exit()
 
     finally:
-        return time_birth
+        return new_time
 
 
 if __name__ == "__main__":
