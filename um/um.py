@@ -7,7 +7,8 @@ def main():
 
 def count(s):
     counter = 0
-    all_ums = re.findall(r'(|\W)um(|\W)', s)
+    all_ums = re.match(r'um', s)
+    print(all_ums)
 
     for um in all_ums:
         counter += 1
