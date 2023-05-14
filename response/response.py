@@ -11,4 +11,5 @@ def email_checking():
     except (errors.EmptyValueError, errors.InvalidEmailError):
         return 'Invalid'
 
-main()
+if __name__ == '__main__':
+    main()
