@@ -1,4 +1,4 @@
-from datetime import date
+from datetime import date, timedelta
 import sys
 
 def main():
@@ -6,7 +6,6 @@ def main():
 
 def time_calc(d):
     try:
-
         time_birth = date.fromisoformat(d)
         print(time_birth)
 
