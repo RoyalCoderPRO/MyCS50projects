@@ -4,8 +4,9 @@ import sys
 def main():
     print(time_calc(input('Date of Birth: '))) #YYYY-MM-DD
 
-def time_calc():
+def time_calc(date):
     try:
+        time =  date.fromisoformat(date)
 
     except:
         sys.exit()
