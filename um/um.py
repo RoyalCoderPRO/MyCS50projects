@@ -7,14 +7,11 @@ def main():
 
 def count(s):
     counter = 0
-    all_ums = re.findall(r'\Wum\W', s)
+    all_ums = re.findall(r'(|\W)um(|\W)', s)
 
     for um in all_ums:
         counter += 1
-    if re.search(r'^um\W', s):
-        counter += 1
-    if re.search(r'um\W*$', s):
-        counter += 1
+
     return counter
 
 if __name__ == "__main__":
