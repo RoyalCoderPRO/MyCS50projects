@@ -6,7 +6,7 @@ def main():
 
 
 def count(s):
-    all_ums = re.findall(r'\w?um\w?', s)
+    all_ums = re.findall(r'\wum\w', s)
     print(all_ums)
 
 if __name__ == "__main__":
