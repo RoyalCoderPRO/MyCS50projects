@@ -1,11 +1,11 @@
-from datetime import date, timedelta
+from datetime import date
 import sys
 
 def main():
     print(time_calc(input('Date of Birth: '))) #YYYY-MM-DD
 
 def time_calc(d):
-    abs = date(0000)
+    abs = date.today()
     try:
         time_birth = date.fromisoformat(d)
         print(abs)
