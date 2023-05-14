@@ -6,12 +6,12 @@ def main():
 
 def time_calc(date):
     try:
-        time =  date.fromisoformat(date)
+        time_birth = date.fromisoformat(date)
 
     except:
         sys.exit()
     finally:
-        date = date.today
+        return time_birth
 
 
 if __name__ == "__main__":
