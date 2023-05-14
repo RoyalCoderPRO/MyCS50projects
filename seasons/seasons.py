@@ -11,6 +11,7 @@ def time_calc(d):
 
     except:
         sys.exit()
+
     finally:
         return time_birth
 
