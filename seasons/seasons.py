@@ -9,7 +9,7 @@ def time_calc(d):
     try:
         time_birth = date.fromisoformat(d)
         print(abs)
-        new_time = time_birth - abs
+        new_time = abs - time_birth
         print(new_time)
 
     except:
