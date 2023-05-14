@@ -1,7 +1,9 @@
 from datetime import date
 
 def main():
-    pass
+    print(time_calc(input('Date of Birth: '))) #YYYY-MM-DD
+
+def time_calc():
 
 
 if __name__ == "__main__":
