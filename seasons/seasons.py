@@ -10,7 +10,7 @@ def time_calc():
     except:
         sys.exit()
     finally:
-        
+        date = date.today
 
 
 if __name__ == "__main__":
