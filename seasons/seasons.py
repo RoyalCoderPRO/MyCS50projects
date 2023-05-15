@@ -1,4 +1,4 @@
-from datetime import date
+from datetime import date, timedelta
 import sys
 
 def main():
@@ -8,6 +8,7 @@ def time_calc(d):
     abs = date.today()
     try:
         time_birth = date.fromisoformat(d)
+        new_time = timedelta(minutes)
         new_time = abs - time_birth
 
     except:
