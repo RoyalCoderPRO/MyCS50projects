@@ -6,6 +6,7 @@ def main():
 
 def time_calc(d):
     abs = date.today()
+    print(abs)
     try:
         time_birth = date.fromisoformat(d)
         new_time = timedelta(minutes)
