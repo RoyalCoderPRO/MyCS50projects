@@ -14,13 +14,11 @@ def time_calc(d):
         new_time = timedelta()
         new_time = abs - time_birth
         new_time = new_time.total_seconds()/60
-    except (UnboundLocalError, ValueError):
-        sys.exit('Invalid date')
-
-    finally:
         new_time = p.number_to_words(int(new_time), andword="").capitalize()
         return new_time
 
+    except (UnboundLocalError, ValueError):
+        sys.exit('Invalid date')
 
 if __name__ == "__main__":
     main()
