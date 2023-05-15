@@ -15,6 +15,7 @@ def time_calc(d):
         new_time = abs - time_birth
         new_time = new_time.total_seconds()/60
         new_time = p.number_to_words(int(new_time), andword="").capitalize()
+        new_time = new_time + " minutes"
         return new_time
 
     except (UnboundLocalError, ValueError):
