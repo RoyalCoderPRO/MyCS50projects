@@ -11,8 +11,7 @@ def time_calc(d):
         time_birth = date.fromisoformat(d)
         new_time = timedelta()
         new_time = abs - time_birth
-        new_time = new_time.minutes
-
+        new_time = new_time.total_seconds()/60
     except:
         sys.exit()
 
