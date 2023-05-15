@@ -14,7 +14,7 @@ def time_calc(d):
         new_time = timedelta()
         new_time = abs - time_birth
         new_time = new_time.total_seconds()/60
-    except UnboundLocalError:
+    except (UnboundLocalError, ValueError):
         sys.exit('Invalid date')
 
     finally:
