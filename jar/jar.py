@@ -18,6 +18,8 @@ class Jar:
         return self._size
     @size.setter
     def size(self, size):
+        if size < capacity:
+            raise ValueError
         self._size = size
 
     def __str__(self):
