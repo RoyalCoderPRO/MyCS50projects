@@ -16,15 +16,18 @@ class Jar:
     def withdraw(self, n):
         self.size -= n
 
-    #@property
-    #def capacity(self):
+    @property
+    def capacity(self):
         ...
+    @capacity.setter
+    def capacity(self, n):
 
     @property
     def size(self):
         return self.size
     @size.setter
-    def size(self, n)
+    def size(self, n):
+        
 
 bank = Jar(3)
 print(bank.size)
