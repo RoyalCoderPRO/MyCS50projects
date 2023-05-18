@@ -39,7 +39,6 @@ class Jar:
 
 def main():
     bank = Jar(12)
-    print(bank.capacity)
     bank.deposit(5)
     print(bank)
     bank.deposit(2)
@@ -47,6 +46,8 @@ def main():
     bank.withdraw(1)
     print(bank)
     bank.deposit(1)
+    print(bank)
+    bank.withdraw(7)
     print(bank)
 
 if __name__ == "__main__":
