@@ -1,9 +1,7 @@
 class Jar:
     def __init__(self, capacity=12):
 
-
-        self._capacity = capacity
-        self._size = 0
+        self.capacity = capacity
 
 
     def __str__(self):
@@ -30,7 +28,7 @@ class Jar:
 
 
 
-bank = Jar(3)
+bank = Jar(15)
 print(bank.size)
 print(bank)
 Jar.deposit(bank, 4)
