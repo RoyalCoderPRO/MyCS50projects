@@ -34,9 +34,9 @@ class Jar:
         self.size -= n
 
 def main():
-    bank = Jar(15)
+    bank = Jar(12)
     print(bank.capacity)
-    Jar.deposit(bank, 12)
+    Jar.deposit(bank, 15)
     print(bank)
     Jar.deposit(bank, 3)
     print(bank)
