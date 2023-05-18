@@ -40,13 +40,13 @@ class Jar:
 def main():
     bank = Jar(12)
     print(bank.capacity)
-    Jar.deposit(bank, 5)
+    bank.deposit(5)
     print(bank)
-    Jar.deposit(bank, 2)
+    bank.deposit(2)
     print(bank)
-    Jar.withdraw(bank, 1)
+    bank.withdraw(1)
     print(bank)
-    Jar.deposit(bank, 1)
+    bank.deposit(1)
     print(bank)
 
 if __name__ == "__main__":
