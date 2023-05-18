@@ -1,9 +1,9 @@
-from jar import Jarring
+from jar import Jar
 from pytest import raises
 
 def test_jar():
-    bottle = Jarring(12)
+    bottle = Jar(12)
     with raises(ValueError):
-        Jarring.deposit(bottle, 15)
+        Jar.deposit(bottle, 15)
 
 test_jar()
