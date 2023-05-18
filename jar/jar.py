@@ -4,6 +4,19 @@ class Jar:
         self.capacity = capacity
         self.size = 0
 
+    def __str__(self):
+        return "🍪" * self.size
+
+    def deposit(self, n):
+        if self.size + n > self.capacity:
+            raise ValueError
+        self.size += n
+
+    def withdraw(self, n):
+        if self.size - n > self.capacity:
+            raise ValueError
+        self.size -= n
+
     @property
     def capacity(self):
         return self.insideproperty #The value for self.insideproperty comes from the setter
@@ -20,25 +33,14 @@ class Jar:
     def size(self, size):
         self._size = size
 
-    def __str__(self):
-        return "🍪" * self.size
 
-    def deposit(self, n):
-        if self.size + n > self.capacity:
-            raise ValueError
-        self.size += n
-
-    def withdraw(self, n):
-        if self.size - n > self.capacity:
-            raise ValueError
-        self.size -= n
 
 def main():
     bank = Jar(12)
     print(bank.capacity)
-    Jar.deposit(bank, 15)
+    Jar.deposit(bank, 5)
     print(bank)
-    Jar.deposit(bank, 3)
+    Jar.deposit(bank, 13)
     print(bank)
     Jar.withdraw(bank, 12)
     print(bank)
