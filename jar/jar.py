@@ -3,7 +3,7 @@ class Jar:
 
 
         self.capacity = capacity
-        self.size = size
+        self.size = 0
 
 
     def __str__(self):
@@ -17,19 +17,17 @@ class Jar:
 
     @property
     def capacity(self):
+        return self._capacity
 
     @capacity.setter
     def capacity(self, capacity):
-        if self.capacity< 0:
+        if self._capacity< 0:
             raise ValueError
+        return self._capacity
 
     @property
     def size(self):
         return self.size
-    @size.setter
-    def size(self, size):
-        self.size = 
-
 
 bank = Jar(3)
 print(bank.size)
