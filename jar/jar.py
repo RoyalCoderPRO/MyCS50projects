@@ -20,7 +20,9 @@ class Jar:
     @property
     def capacity(self):
         return self.insideproperty #The value for self.insideproperty comes from the setter
+
     @capacity.setter #This assigns 'setter' to the capacity property and runs a function
+    
     def capacity(self, capacity):
         if capacity< 0:
             raise ValueError
