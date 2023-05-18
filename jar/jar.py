@@ -23,10 +23,10 @@ class Jar:
 
     @capacity.setter #This assigns 'setter' to the capacity property and runs a function
 
-    def capacity(self, capa):
-        if capa< 0:
+    def capacity(self, cap):
+        if cap < 0:
             raise ValueError
-        self.insideproperty = capa
+        self.insideproperty = cap
 
     @property
     def size(self):
