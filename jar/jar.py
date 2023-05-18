@@ -33,15 +33,17 @@ class Jar:
             raise ValueError
         self.size -= n
 
+def main():
+    bank = Jar(15)
+    print(bank.capacity)
+    Jar.deposit(bank, 12)
+    print(bank)
+    Jar.deposit(bank, 3)
+    print(bank)
+    Jar.withdraw(bank, 12)
+    print(bank)
+    Jar.deposit(bank, 12)
+    print(bank)
 
-
-bank = Jar(15)
-print(bank.capacity)
-Jar.deposit(bank, 12)
-print(bank)
-Jar.deposit(bank, 3)
-print(bank)
-Jar.withdraw(bank, 12)
-print(bank)
-Jar.deposit(bank, 12)
-print(bank)
+if __name__ == "__main__":
+    main()
