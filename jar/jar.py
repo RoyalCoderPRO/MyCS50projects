@@ -1,7 +1,7 @@
 class Jar:
-    def __init__(self, capacity=12):
+    def __init__(self, capa=12):
 
-        self.capacity = capacity
+        self.capacity = capa
         self.size = 0
 
     def __str__(self):
@@ -23,10 +23,10 @@ class Jar:
 
     @capacity.setter #This assigns 'setter' to the capacity property and runs a function
 
-    def capacity(self, capacity):
-        if capacity< 0:
+    def capacity(self, capa):
+        if capa< 0:
             raise ValueError
-        self.insideproperty = capacity
+        self.insideproperty = capa
 
     @property
     def size(self):
@@ -42,11 +42,11 @@ def main():
     print(bank.capacity)
     Jar.deposit(bank, 5)
     print(bank)
-    Jar.deposit(bank, 13)
+    Jar.deposit(bank, 2)
     print(bank)
-    Jar.withdraw(bank, 12)
+    Jar.withdraw(bank, 1)
     print(bank)
-    Jar.deposit(bank, 12)
+    Jar.deposit(bank, 1)
     print(bank)
 
 if __name__ == "__main__":
