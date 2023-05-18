@@ -18,7 +18,7 @@ class Jar:
 
     @property
     def capacity(self):
-        ...
+    
     @capacity.setter
     def capacity(self, n):
 
@@ -27,7 +27,7 @@ class Jar:
         return self.size
     @size.setter
     def size(self, n):
-        
+
 
 bank = Jar(3)
 print(bank.size)
