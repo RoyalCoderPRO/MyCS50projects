@@ -1,4 +1,4 @@
-class Jar:
+class Jarring:
     def __init__(self, capacity=12):
 
         self.capacity = capacity
