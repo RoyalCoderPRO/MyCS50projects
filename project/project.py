@@ -55,9 +55,9 @@ def main():
 # takes return value of main and repeats if Y
 
 def inputcleaner():
-    
 
 
+ 
 
 
 if __name__ == "__main__":
