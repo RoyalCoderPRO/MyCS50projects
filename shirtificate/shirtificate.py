@@ -3,7 +3,7 @@ from fpdf import FPDF
 name = input("Name: ")
 pdf = FPDF()
 pdf= FPDF(orientation="P", unit="mm", format="A4")
-pdf.set_font("helvetica", "B", 15)
+pdf.set_font("arial", "B", 15)
 pdf.add_page()
 pdf.cell(txt="CS50 Shirtificate", align = 'C')
 pdf.image("shirtificate.png")
