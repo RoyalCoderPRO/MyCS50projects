@@ -2,10 +2,11 @@ from fpdf import FPDF
 
 name = input("Name: ")
 pdf = FPDF()
-pdf(orientation="P", unit="mm", format="A4")
-pdf.output("shirtificate.pdf")
+pdf= FPDF(orientation="P", unit="mm", format="A4")
+pdf.set_font("helvetica", "B", 15)
 pdf.add_page()
 pdf.cell(txt="CS50 Shirtificate", align = 'C')
+pdf.output("shirtificate.pdf")
 
 
 
