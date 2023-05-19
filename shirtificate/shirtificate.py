@@ -5,7 +5,7 @@ pdf = FPDF()
 pdf= FPDF(orientation="P", unit="mm", format="A4")
 pdf.set_font("helvetica", "B", 36)
 pdf.add_page()
-pdf.cell(txt="CS50 Shirtificate", align = "C")
+pdf.header(txt="CS50 Shirtificate", align = "C")
 #pdf.image("shirtificate.png")
 pdf.output("shirtificate.pdf")
 
