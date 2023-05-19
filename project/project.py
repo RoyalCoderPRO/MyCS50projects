@@ -6,7 +6,7 @@ def main():
         # create loop to keep appending until exit program
         while True:
             # user input for pokemon name
-            pokemon_name = input('Which pokemon would you like to add to pokedex?: ').lower()
+            pokemon_name = input('Which pokemon would you like to add to pokedex?: ').capitalize()
             # checks for request error
             try:
                 data = requests.get(f'https://pokeapi.co/api/v2/pokemon/{pokemon_name}')
@@ -17,15 +17,13 @@ def main():
                 pass
             # enters name
 
-            pokemon_name = pokemon_name.capitalize()
-            i = 0
             file.write(f'{pokemon_name}:\n  Abilities: \n')
             # indexes desired 'ability' and 'ability slot'
-            for ability_num in data.json()['abilities']:
+            i = 0
+            for ability in data.json()['abilities']:
                 i += 1
-                ability = ability_num['ability']
-                name = ability['name']
-                slot = ability_num['slot']
+                name = ability['ability']['name']
+                slot = ability['slot']
                 name_type = []
                 # prints into txt file
                 file.write(f'   {i}> {name}, slots: {slot},\n')
