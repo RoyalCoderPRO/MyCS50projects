@@ -3,8 +3,7 @@ from fpdf import FPDF
 name = input("Name: ")
 pdf = FPDF()
 pdf.add_page()
-pdf.set_font('helvetica', size=12)
-pdf.cell(txt="CS50 Shirtificate")
+pdf.cell(txt="CS50 Shirtificate", align = 'C')
 pdf(orientation="P", unit="mm", format="A4")
 pdf.output("shirtificate.pdf")
 
