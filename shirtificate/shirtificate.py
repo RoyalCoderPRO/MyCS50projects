@@ -27,7 +27,7 @@ pdf= FPDF(orientation="P", unit="mm", format="A4")
 pdf.set_font("helvetica", "B", 45)
 pdf.add_page()
 pdf.cell(0,60,"CS50 Shirtificate", align = "C")
-pdf.image("shirtificate.png")
+pdf.image("shirtificate.png", x=0, y =70)
 pdf.output("shirtificate.pdf")
 
 
