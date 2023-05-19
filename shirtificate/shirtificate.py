@@ -5,7 +5,7 @@ pdf = FPDF()
 pdf.add_page()
 pdf.set_font('helvetica', size=12)
 pdf.cell(txt="hello world")
-pdf.output("hello_world.pdf")
+pdf.output("shirtificate.pdf")
 
 The orientation of the PDF should be Portrait.
 The format of the PDF should be A4, which is 210mm wide by 297mm tall.
