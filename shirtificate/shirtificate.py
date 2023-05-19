@@ -24,10 +24,10 @@ class PDF(FPDF):
 name = input("Name: ")
 pdf = FPDF()
 pdf= FPDF(orientation="P", unit="mm", format="A4")
-pdf.set_font("helvetica", "B", 36)
+pdf.set_font("helvetica", "B", 45)
 pdf.add_page()
-pdf.header(txt="CS50 Shirtificate", align = "C")
-#pdf.image("shirtificate.png")
+pdf.cell(0,60,"CS50 Shirtificate", align = "C")
+pdf.image("shirtificate.png")
 pdf.output("shirtificate.pdf")
 
 
