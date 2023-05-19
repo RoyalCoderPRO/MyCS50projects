@@ -53,5 +53,7 @@ def main():
 
     return repeat
 # takes return value of main and repeats if Y
-while main() == 'Y':
-    pass
+
+if __name__ == "__main__":
+    while main() == 'Y':
+        pass
