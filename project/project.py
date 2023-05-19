@@ -2,7 +2,7 @@ import requests
 
 def main():
     # start editing
-    with open('PokeDex.word', mode= 'a') as file:
+    with open('PokeDex.txt', mode= 'a') as file:
         # create loop to keep appending until exit program
         while True:
             # user input for pokemon name
@@ -55,7 +55,7 @@ def repeater():
             repeat = input("Only enter 'Y' or 'N' to answer 'Yes' or 'No':")
         else:
             return repeat
-        # for repeating application task
+        # for checking valid value
 
 
 if __name__ == "__main__":
