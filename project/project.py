@@ -23,6 +23,7 @@ def menu():
 def pokereader():
     with open('PokeDex.txt', mode= 'r') as file:
         for line in file:
+            print(line)
             if line.startswith(' '):
                 continue
             pokemon_name = line.strip(':')
