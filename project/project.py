@@ -14,10 +14,10 @@ def main():
 def menu():
     while True:
         try:
-            value = str(input("Enter 1 for putting new pokemon in your pokedex\nEnter 2 for reading your pokemon\n: "))
+            value = str(input("Enter 1 for putting new pokemon in your pokedex\nEnter 2 for reading your pokemon\n"))
             assert value in ['1','2']
         except AssertionError:
-            print('Only choose 1 or 2 and press enter\n:')
+            print('Only choose 1 or 2 and press enter\n')
         else:
             return value
 
@@ -65,8 +65,7 @@ def pokelister():
             # indexes desired 'types'
             for types_num in data.json()['types']:
                 j += 1
-                types = types_num['type']
-                name_type = types['name']
+                name_type = types_num['type']['name']
                 file.write(f'   {j}> {name_type}\n')
             if repeater() == 'N':
                 file.close
