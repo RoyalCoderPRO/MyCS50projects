@@ -4,10 +4,11 @@ import requests
 def main():
     match menu():
         case '1':
-            return pokelister()
+            while pokelister() == 'Y':
+                pass
         case '2':
             pokereader()
-            return 'N'
+
 
 
 
@@ -88,5 +89,4 @@ def repeater():
 
 
 if __name__ == "__main__":
-    while main() == 'Y':
-        pass
+    main()
