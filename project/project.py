@@ -1,6 +1,5 @@
 import requests
 
-
 def main():
     match menu():
         case '1':
@@ -23,7 +22,7 @@ def pokereader():
     with open('PokeDex.txt', mode= 'r') as file:
         i = 0
         for line in file:
-            if line.startswith(' '): #Only pokemon names do not start with <whitespace>
+            if line.startswith(' '): # Only pokemon names do not start with <whitespace>
                 continue
             i += 1
             pokemon_name = line.strip('\n').strip(':')
@@ -57,7 +56,7 @@ def pokelister():
             else:
                 pokemon_name = pokemon_name.capitalize()
 
-                file.write(f'{pokemon_name}:\n  Abilities: \n')  #Writes the pokemon's name and starts ability printing loop
+                file.write(f'{pokemon_name}:\n  Abilities: \n')  # Writes the pokemon's name and starts ability printing loop
 
 
                 # indexes desired 'ability' and 'ability slot' in the txt file (for enumerated abilities)
