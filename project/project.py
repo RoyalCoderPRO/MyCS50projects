@@ -1,13 +1,16 @@
 import requests
 def main():
     match menu():
-        case
+        case '1':
+            pokelister()
+        case '2':
+            pokereader()
 
 
 
 
 def menu():
-    return input("Enter 1 for putting new pokemon in your pokedex\n Enter 2 for reading your pokemon\n:")
+    value = str(input("Enter 1 for putting new pokemon in your pokedex\n Enter 2 for reading your pokemon\n:"))
 
 
 def pokereader():
