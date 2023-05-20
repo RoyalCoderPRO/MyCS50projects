@@ -3,4 +3,5 @@ Pikachu:
    1> static, slots: 1,
    2> lightning-rod, slots: 3,
   Types:
-   1> electric
+   1> electricPikachu:
+  Abilities: 

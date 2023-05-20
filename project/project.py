@@ -1,12 +1,12 @@
 import requests
+
+
 def main():
     match menu():
         case '1':
             pokelister()
         case '2':
             pokereader()
-
-
 
 
 def menu():
@@ -23,10 +23,9 @@ def menu():
 def pokereader():
     with open('PokeDex.txt', mode= 'r') as file:
         for line in file:
-            print(line)
             if line.startswith(' '):
                 continue
-            pokemon_name = line.strip(':')
+            pokemon_name = line.strip('\n').strip(':')
             print(pokemon_name)
 
 
