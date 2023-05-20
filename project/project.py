@@ -39,9 +39,7 @@ def main():
             file.close
             break
 
-
-    repeat = repeater()
-    return repeat
+    return repeater()
 # takes return value of main and repeats if Y
 
 def repeater():
