@@ -18,3 +18,7 @@ Charizard:
   Types:
    1> fire
    2> flying
+Pikachu:
+  Abilities: 
+Pikachu:
+  Abilities: 
