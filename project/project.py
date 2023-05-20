@@ -1,12 +1,22 @@
 import requests
+def main():
+    match menu():
+        case
+
+
+
+
+def menu():
+    return input("Enter 1 for putting new pokemon in your pokedex\n Enter 2 for reading your pokemon\n:")
+
 
 def pokereader():
     with open('Pokedex.txt', mode= 'r') as file:
         for line in file:
             if line.startswith(' '):
-                pass
-            
-
+                continue
+            pokemon_name = line
+            print(pokemon_name)
 
 
 
