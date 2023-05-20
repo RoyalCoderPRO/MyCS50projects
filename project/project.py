@@ -8,9 +8,6 @@ def main():
         case '2':
             pokereader()
 
-
-
-
 def menu():
     while True:
         try:
