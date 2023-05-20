@@ -4,9 +4,11 @@ import requests
 def main():
     match menu():
         case '1':
-            pokelister()
+            return pokelister()
         case '2':
             pokereader()
+            return 'N'
+
 
 
 def menu():

@@ -5,3 +5,5 @@ Pikachu:
   Types:
    1> electricPikachu:
   Abilities: 
+Pikachu:
+  Abilities: 
