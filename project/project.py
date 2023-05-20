@@ -38,7 +38,7 @@ def pokelister():
         # create loop to keep appending until exit program
         while True:
             # user input for pokemon name
-            pokemon_name = input('Which pokemon would you like to add to pokedex?: ').capitalize()
+            pokemon_name = input('Which pokemon would you like to add to pokedex?: ').lower()
             # checks for request error
             try:
                 data = requests.get(f'https://pokeapi.co/api/v2/pokemon/{pokemon_name}')
@@ -48,6 +48,7 @@ def pokelister():
                 print('Not a pokemon, try again')
                 pass
             # enters name
+            pokemon_name = pokemon_name.capitalize()
 
             file.write(f'{pokemon_name}:\n  Abilities: \n')
             # indexes desired 'ability' and 'ability slot'
