@@ -11,7 +11,7 @@ def main():
 def menu():
     while True:
         try:
-            value = str(input("Enter 1 for putting new pokemon in your pokedex\nEnter 2 for reading your pokemon\n"))
+            value = str(input("Enter 1 for putting new pokemon in your pokedex\nEnter 2 for checking your pokemon set\n"))
             assert value in ['1','2']
         except AssertionError:
             print('Only choose 1 or 2 and press enter\n')
