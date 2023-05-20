@@ -96,6 +96,7 @@ def repeater():
         else:
             return repeat
         # for checking valid value
+    return None
 
 
 if __name__ == "__main__":
