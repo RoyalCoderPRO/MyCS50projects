@@ -12,7 +12,7 @@ def main():
 def menu():
     while True:
         try:
-            value = str(input("Enter 1 for putting new pokemon in your pokedex\n Enter 2 for reading your pokemon\n:"))
+            value = str(input("Enter 1 for putting new pokemon in your pokedex\nEnter 2 for reading your pokemon\n: "))
             assert value in ['1','2']
         except AssertionError:
             print('Only choose 1 or 2 and press enter\n:')
@@ -21,11 +21,11 @@ def menu():
 
 
 def pokereader():
-    with open('Pokedex.txt', mode= 'r') as file:
+    with open('PokeDex.txt', mode= 'r') as file:
         for line in file:
             if line.startswith(' '):
                 continue
-            pokemon_name = line
+            pokemon_name = line.strip(':')
             print(pokemon_name)
 
 
@@ -85,5 +85,5 @@ def repeater():
 
 
 if __name__ == "__main__":
-    while pokelister() == 'Y':
+    while main() == 'Y':
         pass
