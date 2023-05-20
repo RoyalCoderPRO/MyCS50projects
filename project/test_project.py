@@ -1,10 +1,10 @@
-def test_function_1():
+def test_pokereader():
     ...
 
 
-def test_function_2():
+def test_pokelister():
     ...
 
 
-def test_function_3():
+def test_repeater():
     ...
