@@ -4,8 +4,7 @@ import requests
 def main():
     match menu():
         case '1':
-            while pokelister() == 'Y':
-                pass
+            pokelister()
         case '2':
             pokereader()
 
@@ -69,11 +68,10 @@ def pokelister():
                 types = types_num['type']
                 name_type = types['name']
                 file.write(f'   {j}> {name_type}\n')
+            if repeater() == 'N':
+                file.close
+                break
 
-            file.close
-            break
-
-    return repeater()
 # takes return value of main and repeats if Y
 
 def repeater():
