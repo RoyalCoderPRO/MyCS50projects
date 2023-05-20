@@ -1,5 +1,15 @@
 import requests
 
+def pokereader():
+    with open('Pokedex.txt', mode= 'r') as file:
+        for line in file:
+            if line.startswith(' '):
+                pass
+            
+
+
+
+
 def pokelister():
     # start editing
     with open('PokeDex.txt', mode= 'a') as file:
