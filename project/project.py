@@ -1,6 +1,6 @@
 import requests
 
-def main():
+def pokelister():
     # start editing
     with open('PokeDex.txt', mode= 'a') as file:
         # create loop to keep appending until exit program
@@ -55,5 +55,5 @@ def repeater():
 
 
 if __name__ == "__main__":
-    while main() == 'Y':
+    while pokelister() == 'Y':
         pass
