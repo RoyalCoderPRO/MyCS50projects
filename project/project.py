@@ -34,7 +34,7 @@ def pokereader():
             i += 1
             pokemon_name = line.strip('\n').strip(':')
             print(f'{i}> {pokemon_name}')
-            file.close()
+        file.close()
         return str('Pokedex pokemon read')
 
 
