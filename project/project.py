@@ -5,7 +5,7 @@ def main():
         case '1':
             pokelister()
         case '2':
-            pokereader()
+            pokereader(input('Which pokemon would you like to add to pokedex?: ').lower())
 
 def menu():
     while True:
@@ -30,21 +30,16 @@ def pokereader():
 
 
 
-def pokelister():
+def pokelister(pokemon_name):
     # start editing
     with open('PokeDex.txt', mode= 'a') as file:
 
         # create loop to keep appending until exit the file, function and program
         while True:
 
-
-            # user input for pokemon name
-            pokemon_name = input('Which pokemon would you like to add to pokedex?: ').lower()
-
-
             # checks for request error
             try:
-                data = requests.get(f'https://pokeapi.co/api/v2/pokemon/{pokemon_name}')
+                data = requests.get(f'https://pokeapi.co/api/v2/pokemon/{pokemon_name.lower()}')
                 data.json()['height']
             # resets input for revising
             except:
