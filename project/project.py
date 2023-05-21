@@ -5,8 +5,8 @@ def main():
         case '1':
             while True:
                 pokemon = input('Which pokemon would you like to add to pokedex?: ').lower()
-                checker(pokemon)
-                
+                if checker(pokemon) == 0:
+                    break
             pokelister(pokemon)
         case '2':
             while True:
@@ -35,9 +35,11 @@ def pokereader():
 
 
 
-def pokelister(pokemon_name, data):
+def pokelister(pokemon_name):
     # start editing
     with open('PokeDex.txt', mode= 'a') as file:
+
+        data = requests.get(f'https://pokeapi.co/api/v2/pokemon/{pokemon_name.lower()}')
 
         # create loop to keep appending until exit the file, function and program
         pokemon_name = pokemon_name.capitalize()
