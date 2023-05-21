@@ -35,7 +35,7 @@ def pokereader():
             pokemon_name = line.strip('\n').strip(':')
             print(f'{i}> {pokemon_name}')
             file.close()
-     return 'Pokemon added to PokeDex.txt'
+        return str('Pokedex pokemon read')
 
 
 
@@ -69,7 +69,7 @@ def pokelister(pokemon_name):
             j += 1
             name_type = types_num['type']['name']
             file.write(f'   {j}> {name_type}\n')
-    return str(Pokemon added to PokeDex.txt)
+    return str('Pokemon added to PokeDex.txt')
 
 # takes return value of main and repeats if Y
 def repeater():

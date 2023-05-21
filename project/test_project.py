@@ -1,11 +1,11 @@
 import project
 
 def test_pokereader():
-    assert project.pokereader() == None
+    assert project.pokereader() == 'Pokedex pokemon read'
 
 
 def test_pokelister():
-    assert project.pokelister('Pikachu') == None
+    assert project.pokelister('Pikachu') == 'Pokemon added to PokeDex.txt'
 
 
 def test_repeater():
