@@ -3,10 +3,14 @@ import requests
 def main():
     match menu():
         case '1':
-            pokelister()
-        case '2':
             while True:
                 pokemon = input('Which pokemon would you like to add to pokedex?: ').lower()
+                checker(pokemon)
+                
+            pokelister(pokemon)
+        case '2':
+            while True:
+                pokereader()
 
 def menu():
     while True:
@@ -81,17 +85,15 @@ def repeater():
     return None
 def checker(pokemon_name):
     while True:
-
-            # checks for request error
             try:
                 data = requests.get(f'https://pokeapi.co/api/v2/pokemon/{pokemon_name.lower()}')
                 data.json()['height']
             # resets input for revising
             except:
                 print('Not a pokemon, try again')
-                pass
+                return 1
             else:
-                return data
+                return 0
 
 if __name__ == "__main__":
     main()
