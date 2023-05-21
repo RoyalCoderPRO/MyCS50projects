@@ -7,7 +7,12 @@ def main():
                 pokemon = input('Which pokemon would you like to add to pokedex?: ').lower()
                 if checker(pokemon) == 0:
                     break
-            pokelister(pokemon)
+            while True:
+                pokelister(pokemon)
+                if repeater() == 'N':
+                    break
+                else:
+                    pass
         case '2':
             pokereader()
 
@@ -65,9 +70,6 @@ def pokelister(pokemon_name):
             name_type = types_num['type']['name']
             file.write(f'   {j}> {name_type}\n')
 
-
-        if repeater() == 'N':
-            file.close # Closes file and loop if user inputs 'N', else repeats
 
 # takes return value of main and repeats if Y
 def repeater():
