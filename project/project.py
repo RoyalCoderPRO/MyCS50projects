@@ -9,8 +9,7 @@ def main():
                     break
             pokelister(pokemon)
         case '2':
-            while True:
-                pokereader()
+            pokereader()
 
 def menu():
     while True:
@@ -69,9 +68,6 @@ def pokelister(pokemon_name):
 
         if repeater() == 'N':
             file.close # Closes file and loop if user inputs 'N', else repeats
-            break
-
-
 
 # takes return value of main and repeats if Y
 def repeater():
