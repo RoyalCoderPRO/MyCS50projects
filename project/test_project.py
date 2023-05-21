@@ -11,3 +11,4 @@ def test_pokelister():
 def test_repeater():
     assert project.checker('Pikachu') == 0
     assert project.checker('random_name') == 1
+
