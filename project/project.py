@@ -5,7 +5,8 @@ def main():
         case '1':
             pokelister()
         case '2':
-            pokereader(input('Which pokemon would you like to add to pokedex?: ').lower())
+            while True:
+                pokemon = input('Which pokemon would you like to add to pokedex?: ').lower()
 
 def menu():
     while True:
@@ -30,53 +31,39 @@ def pokereader():
 
 
 
-def pokelister(pokemon_name):
+def pokelister(pokemon_name, data):
     # start editing
     with open('PokeDex.txt', mode= 'a') as file:
 
         # create loop to keep appending until exit the file, function and program
-        while True:
+        pokemon_name = pokemon_name.capitalize()
 
-            # checks for request error
-            try:
-                data = requests.get(f'https://pokeapi.co/api/v2/pokemon/{pokemon_name.lower()}')
-                data.json()['height']
-            # resets input for revising
-            except:
-                print('Not a pokemon, try again')
-                pass
-            # enters name
+        file.write(f'{pokemon_name}:\n  Abilities: \n')  # Writes the pokemon's name and starts ability printing loop
 
 
-            else:
-                pokemon_name = pokemon_name.capitalize()
+        # indexes desired 'ability' and 'ability slot' in the txt file (for enumerated abilities)
+        i = 0
+        for ability in data.json()['abilities']:
+            i += 1
+            name = ability['ability']['name']
+            slot = ability['slot']
 
-                file.write(f'{pokemon_name}:\n  Abilities: \n')  # Writes the pokemon's name and starts ability printing loop
-
-
-                # indexes desired 'ability' and 'ability slot' in the txt file (for enumerated abilities)
-                i = 0
-                for ability in data.json()['abilities']:
-                    i += 1
-                    name = ability['ability']['name']
-                    slot = ability['slot']
-
-                    # prints into txt file
-                    file.write(f'   {i}> {name}, slots: {slot},\n')
-                file.write(f'  Types:\n')
+            # prints into txt file
+            file.write(f'   {i}> {name}, slots: {slot},\n')
+        file.write(f'  Types:\n')
 
 
-                # indexes desired 'types' in the txt file (for enumerated type)
-                j = 0
-                for types_num in data.json()['types']:
-                    j += 1
-                    name_type = types_num['type']['name']
-                    file.write(f'   {j}> {name_type}\n')
+        # indexes desired 'types' in the txt file (for enumerated type)
+        j = 0
+        for types_num in data.json()['types']:
+            j += 1
+            name_type = types_num['type']['name']
+            file.write(f'   {j}> {name_type}\n')
 
 
-                if repeater() == 'N':
-                    file.close # Closes file and loop if user inputs 'N', else repeats
-                    break
+        if repeater() == 'N':
+            file.close # Closes file and loop if user inputs 'N', else repeats
+            break
 
 
 
@@ -92,7 +79,19 @@ def repeater():
             return repeat
         # for checking valid value
     return None
+def checker(pokemon_name):
+    while True:
 
+            # checks for request error
+            try:
+                data = requests.get(f'https://pokeapi.co/api/v2/pokemon/{pokemon_name.lower()}')
+                data.json()['height']
+            # resets input for revising
+            except:
+                print('Not a pokemon, try again')
+                pass
+            else:
+                return data
 
 if __name__ == "__main__":
     main()
