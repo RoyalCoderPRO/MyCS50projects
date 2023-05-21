@@ -6,9 +6,7 @@ def main():
             while True:
                 pokemon = input('Which pokemon would you like to add to pokedex?: ').lower()
                 if checker(pokemon) == 0:
-                    break
-            while True:
-                pokelister(pokemon)
+                    pass
                 if repeater() == 'N':
                     break
                 else:
@@ -78,7 +76,8 @@ def repeater():
             repeat = input('Done! Would you like to add any other Pokemon to your Pokedex?: (Y/N) ')
             assert repeat == 'Y' or repeat == 'N'
         except:
-            repeat = input("Only enter 'Y' or 'N' to answer 'Yes' or 'No':")
+            print("Only enter 'Y' or 'N' to answer 'Yes' or 'No':")
+            pass
         else:
             return repeat
         # for checking valid value
