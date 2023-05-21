@@ -1,0 +1,25 @@
+Pikachu:
+  Abilities: 
+   1> static, slots: 1,
+   2> lightning-rod, slots: 3,
+  Types:
+   1> electric
+Bulbasaur:
+  Abilities: 
+   1> overgrow, slots: 1,
+   2> chlorophyll, slots: 3,
+  Types:
+   1> grass
+   2> poison
+Pikachu:
+  Abilities: 
+   1> static, slots: 1,
+   2> lightning-rod, slots: 3,
+  Types:
+   1> electric
+Pikachu:
+  Abilities: 
+   1> static, slots: 1,
+   2> lightning-rod, slots: 3,
+  Types:
+   1> electric

@@ -5,8 +5,9 @@ def test_pokereader():
 
 
 def test_pokelister():
-    assert project.pokelister() == None
+    assert project.pokelister('Pikachu') == None
 
 
 def test_repeater():
-    assert project.pokelister() == None
+    assert project.checker('Pikachu') == 0
+    assert project.checker('random_name') == 1
