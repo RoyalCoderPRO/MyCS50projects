@@ -17,6 +17,3 @@ Chikorita:
    2> leaf-guard, slots: 3,
   Types:
    1> grass
-Charmander:
- Abilities:
- 1> fiadfslkadf
