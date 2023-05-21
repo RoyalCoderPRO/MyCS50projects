@@ -6,7 +6,7 @@ def main():
             while True:
                 pokemon = input('Which pokemon would you like to add to pokedex?: ').lower()
                 if checker(pokemon) == 0:
-                    pass
+                    pokelister(pokemon)
                 if repeater() == 'N':
                     break
                 else:
