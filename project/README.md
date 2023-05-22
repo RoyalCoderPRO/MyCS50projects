@@ -49,3 +49,4 @@ This script utilizes the [PokeAPI](https://pokeapi.co/), an open API for retriev
 
 ## Personal Comments
 
+This took me a little while, and I had intially made it without any abstraction, however, I re-oriented it to have separate functions for utility and passing the conditions for submission. I chose a text log instead of internal storage so that the storage existed beyond the scope of the application. I optimized this program resonably so that it could be used in a larger scale.
