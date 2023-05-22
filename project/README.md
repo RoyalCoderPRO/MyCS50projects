@@ -1,9 +1,51 @@
 # POKEDEX
-    #### Video Demo:  <URL HERE>
-    #### Description: This is a small application which creates and uses a small pokedex (txt) file which keeps track of your pokemon and states its abilities. It uses PokeApi to retrieve the pokemon information, using file I/O, adds pokemon and their ability and types with stylization, and reads using non whitespace started text to list pokemon from it. Also has error checks which prevent redundant or wrong inputs. Requires response package and is formatted well enough to be cleaned if required.
 
-    I created this to go with my pokemon planet game and takes a few fundamental concepts of procedural programming and doesn't need too many inputs.
+#### Video Demo:  <URL HERE>
 
-    DOES NEED INTERNET ACCESS
+#### Description: # Pokémon Pokedex
 
-    Need some
+This is a Python script that allows you to create and manage your own Pokémon Pokedex. You can add new Pokémon to your Pokedex, view the list of Pokémon you have added, and interactively navigate through the menu options.
+
+## Prerequisites
+
+- Python 3.x
+- Requests library (`pip install requests`)
+
+## Usage
+
+1. Clone the repository or download the script `pokedex.py` to your local machine.
+2. Install the Requests library by running `pip install requests` if you don't have it installed already.
+3. Open a terminal or command prompt and navigate to the directory where the script is located.
+4. Run the following command to execute the script:
+
+   ```bash
+   python pokedex.py
+   ```
+
+5. The script will display a menu with two options:
+
+   - Option 1: Put a new Pokémon in your Pokedex.
+   - Option 2: Check your Pokémon set.
+
+6. Enter the corresponding number for the desired option and press Enter.
+
+   - If you choose option 1, you will be prompted to enter the name of the Pokémon you want to add to your Pokedex. The script will retrieve data about the Pokémon from the PokeAPI and save it in a file called `PokeDex.txt`.
+   - If you choose option 2, the script will display the list of Pokémon you have added to your Pokedex.
+
+7. After performing the selected action, you will be asked if you want to add any other Pokémon to your Pokedex. Enter 'Y' for Yes or 'N' for No and press Enter.
+
+8. The script will repeat the process based on your response until you choose to exit.
+
+## Contributing
+
+Contributions to this script are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on the [GitHub repository](https://github.com/yourusername/pokedex).
+
+## License
+
+This script is licensed under the [MIT License](https://opensource.org/licenses/MIT). Feel free to modify and use it according to your needs.
+
+## Credits
+
+- [Aditya Karmokar](https://github.com/yourusername) - Script author
+
+This script utilizes the [PokeAPI](https://pokeapi.co/), an open API for retrieving Pokémon data.
