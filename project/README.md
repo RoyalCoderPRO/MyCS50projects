@@ -46,3 +46,6 @@ This script is licensed under the [MIT License](https://opensource.org/licenses/
 - [LinkedIn](https://www.linkedin.com/in/aditya-karmokar-6785751b1/)
 
 This script utilizes the [PokeAPI](https://pokeapi.co/), an open API for retrieving Pokémon data.
+
+## Personal Comments
+
