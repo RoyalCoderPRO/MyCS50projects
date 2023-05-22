@@ -18,9 +18,9 @@ This is a Python script that allows you to create and manage your own Pokémon P
 3. Open a terminal or command prompt and navigate to the directory where the script is located.
 4. Run the following command to execute the script:
 
-   ```bash
+
    python pokedex.py
-   ```
+
 
 5. The script will display a menu with two options:
 
@@ -42,6 +42,7 @@ This script is licensed under the [MIT License](https://opensource.org/licenses/
 
 ## Credits
 
-- [Aditya Karmokar](https://github.com/RoyalCoderPRO) - Script author
+- [Github](https://github.com/RoyalCoderPRO) - Aditya Karmokar
+- [LinkedIn]()
 
 This script utilizes the [PokeAPI](https://pokeapi.co/), an open API for retrieving Pokémon data.
