@@ -36,16 +36,12 @@ This is a Python script that allows you to create and manage your own Pokémon P
 
 8. The script will repeat the process based on your response until you choose to exit.
 
-## Contributing
-
-Contributions to this script are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on the [GitHub repository](https://github.com/yourusername/pokedex).
-
 ## License
 
 This script is licensed under the [MIT License](https://opensource.org/licenses/MIT). Feel free to modify and use it according to your needs.
 
 ## Credits
 
-- [Aditya Karmokar](https://github.com/yourusername) - Script author
+- [Aditya Karmokar](https://github.com/RoyalCoderPRO) - Script author
 
 This script utilizes the [PokeAPI](https://pokeapi.co/), an open API for retrieving Pokémon data.
