@@ -1,5 +1,7 @@
 import requests
-
+# Aditya Karmokar
+# 
+#
 def main():
     match menu():
         case '1':
@@ -20,7 +22,7 @@ def menu():
             value = str(input("Enter 1 for putting new pokemon in your pokedex\nEnter 2 for checking your pokemon set\nOption: "))
             assert value in ['1','2']
         except AssertionError:
-            print('Only choose 1 or 2 and press enter\n')
+            print('\nOnly choose 1 or 2 and press enter\n')
         else:
             return value
 

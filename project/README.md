@@ -5,3 +5,5 @@
     I created this to go with my pokemon planet game and takes a few fundamental concepts of procedural programming and doesn't need too many inputs.
 
     DOES NEED INTERNET ACCESS
+
+    Need some
