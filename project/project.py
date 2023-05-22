@@ -1,7 +1,6 @@
 import requests
 # Aditya Karmokar
-# 
-#
+
 def main():
     match menu():
         case '1':
